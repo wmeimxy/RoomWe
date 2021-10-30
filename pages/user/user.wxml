@@ -17,7 +17,8 @@
 <!-- 已经登录显示界面 -->
 <block wx:else>
 	<view class="hmly-body" style="height:{{phoneHeight}}px">
-		<!-- 头像昵称签到部分 -->
+
+		<!-- 头像昵称部分 -->
 		<view class="hmly-top-bar">
 			<!-- 头像昵称 -->
 			<view class="hmly-user-img">
@@ -25,33 +26,43 @@
 					<view class="hmly-avatar">
 						<image class="hmly-avatar-img" src="{{avatarUrl}}"></image>
 					</view>
+
 					<view class="hmly-nickname">
-					<text class="#">Wechat Username</text>
+					<text class="#">Name</text>
 					<!--因为本来是中文“微信用户”，暂时改成英文-->
 						<!--<text class="#">{{nickName}}</text>-->
 					</view>
+
 				</view>
 			</view>
+			<text style="margin-left:50rpx">Description</text>
 		</view>
-		<!-- 选项卡部分 -->
+		<!-- menu部分 -->
 		<view class="hmly-chioce">
-			<!-- 选项卡item -->
-			<view class="hmly-choice-item" bintap="">
-				<text style="margin-left:20rpx">View Account Info</text>
+			<!-- 选项item -->
+
+			<view class="hmly-choice-item" bindtap="gotoUserinfo">
+				<view class="">
+					<text style="margin-left:20rpx">View Complete Profile</text>
+				</view>
 			</view>
 
-			<view class="hmly-choice-item" bintap="">
+			<view class="hmly-choice-item" bindtap="gotoPreference">
 				<view class="">
 					<text style="margin-left:20rpx">Change My Housing Preference</text>
 				</view>
 			</view>
 
+			<view class="hmly-choice-item" bindtap="gotoMBTI">
+				<view class="">
+					<text style="margin-left:20rpx">Identify My Personality</text>
+				</view>
+			</view>
+
 			<view class="hmly-choice-item" bindtap="gotoLogin">
 				<view class="">
-					<text class="icon-changeCount text-gray"></text>
 					<text style="margin-left:20rpx">Log Out</text>
 				</view>
-				<text class="icon-right text-gray"></text>
 			</view>
 		</view>
 	</view>

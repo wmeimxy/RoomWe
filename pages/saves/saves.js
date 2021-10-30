@@ -1,66 +1,52 @@
-// pages/alert/alert.js
+const app = getApp()
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
-
+    currentIndex:0,
+    height:0,
+    login: false,
+    content: [
+      {text: "My Saved Roommate"},
+      {text: "Invitations"}
+    ]
   },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
+  onLoad() {
+    const that = this;
+    wx.getSystemInfo({
+      success (res) {
+        that.setData({
+          height :res.windowHeight
+        })
+      }
+    })
   },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
+  onShow() {
+    const that = this
+    if (!that.login) {
+      wx.getStorage({
+        key: 'userinfo',
+        success(res){
+          that.setData({
+            login: res.data ? true : false,
+          })
+        }
+      })
+    }
   },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
+  checkItem(e) {
+    const that = this;
+    if (this.data.currentIndex === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentIndex: e.target.dataset.index
+      })
+    }
   },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
+  // 滑动切换tab
+  changeTab(e) {
+    const that = this;
+    that.setData({
+      currentIndex:e.detail.current
+    })
   }
 })

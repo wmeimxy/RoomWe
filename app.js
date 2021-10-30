@@ -1,6 +1,6 @@
 // app.js
 App({
-  onLaunch() {
+  onLaunch:function() {
     // 获取用户信息
 		wx.getSetting({
 			success: res => {
@@ -20,11 +20,11 @@ App({
 					})
 				}
 			}
-    })
-    //云开发初始化
-    wx.cloud.init({
-      env:"cloud1-7gtebtkf6c1b6fcc"
-    })
+		})
+			 //云开发初始化
+			 wx.cloud.init({
+				env:"cloud1-7gtebtkf6c1b6fcc"
+			})
 	},
 	globalData: {
 		userInfo: null

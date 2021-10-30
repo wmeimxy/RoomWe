@@ -10,7 +10,7 @@
 		<!-- 微信登录 -->
 		<view class="hmly-wechat">
 			<view class="hmly-wecaht-login">
-				<button ><text class="icon-wechat"></text>WeChat Log In</button>
+				<button bindtap="getUserProfile"><text class="icon-wechat"></text>WeChat Log In</button>
 			</view>
 		</view>
 

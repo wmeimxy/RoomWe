@@ -1,2 +1,36 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<!-- 搜索框 -->
+<view class="hmly-search">
+	<view class="hmly-search-left">
+		<text class="icon-search"></text>
+		<input placeholder="Enter tag or roommate name" bindconfirm="search"></input>
+	</view>
+	<view class="hmly-search-right" bindtap="cancelSearch">Cancel</view>
+</view>
+<!-- 搜索历史 -->
+<view class="hmly-history" wx:if="{{searchHistory.length}}">
+	<!-- 提示标题 -->
+	<view class="hmly-title">
+		<view class="hmly-title-text">Search History</view>
+		<text class="icon-delete text-gray" bindtap="clearHistory"></text>
+	</view>
+	<!-- 内容 -->
+	<view class="hmly-history-content">
+		<view class="hmly-content-item bg-gray text-black" wx:for="{{searchHistory}}" wx:key="index">{{item}}</view>
+	</view>
+</view>
+<!-- 热门搜索 -->
+<view class="hmly-hot">
+	<!-- 提示标题 -->
+	<view class="hmly-title">
+		<view class="title-text">Tags</view>
+	</view>
+	<view class="hmly-hot-content">
+		<view class="hmly-hot-items" wx:for="{{hotData}}" wx:key="index">
+			<view class="hmly-item-left">
+				<view class="{{index < 3 ? 'text-red' : ''}}">{{index + 1}}</view>
+				<view class="hmly-item-title text-black">{{item.title}}</view>
+			</view>
+			<text class="{{item.icon}} {{item.color}}"></text>
+		</view>
+	</view>
+</view>

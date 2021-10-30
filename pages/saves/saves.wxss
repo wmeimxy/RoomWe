@@ -1,19 +1,95 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+/* pages/collection/collection.wxss */
+
+.hmly-title-bar {
+	width: 100%;
+	height: 80rpx;
+	/* 这个配色不对 */
+	border-bottom: 1rpx solid #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28rpx;
+	overflow: hidden;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.hmly-item-title {
+	width: 400rpx;
+	height: 100%;
+	text-align: center;
+	line-height: 80rpx;
+	position: relative;
+	color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.hmly-active:after {
+	content: '';
+	width: 300rpx;
+	height: 8rpx;
+	position: absolute;
+	bottom: 0rpx;
+	left: 50rpx;
+	border-radius: 15rpx;
+	background: #ff520f;
+}
+
+.hmly-active {
+	font-size: 32rpx;
+	font-weight: 700;
+	transition: all 0.3s;
+	color: #333;
+}
+
+.hmly-collection-content {
+	width: 90%;
+	margin: 0rpx auto;
+	margin-top: 10rpx;
+}
+
+.hmly-collection-content {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 300rpx;
+	color: #aaaaaa
+}
+
+swiper {
+	display: block;
+	width: 100%;
+}
+
+.hmly-swiper-box-item {
+	height: 400rpx;
+}
+
+.hmly-no-content {
+	width: 90%;
+	height: auto;
+	margin: 0rpx auto;
+	margin-top: 100rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.hmly-no-content image {
+	width: 400rpx;
+	height: 300rpx;
+	align-self: center;
+}
+
+.hmly-but-box {
+	width: 80%;
+	margin: 0rpx auto;
+	margin-top: 40rpx;
+	text-align: center;
+}
+
+.hmly-but {
+	width: 300rpx;
+	height: 80rpx;
+	font-size: 40rpx;
+	line-height: 80rpx;
+	margin-top: 10rpx;
 }

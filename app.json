@@ -4,8 +4,7 @@
     "pages/index/index",
     "pages/search/search",
     "pages/user/user",
-    "pages/saves/saves",
-    "pages/recommend/recommend"
+    "pages/saves/saves"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -24,15 +23,12 @@
         "selectedIconPath": "/image/tabbar/home-selectIcon.png"
       },
       {
-        "pagePath": "pages/recommend/recommend",
-        "text": "Recommendation",
+        "pagePath": "pages/search/search",
+        "text": "Search",
         "iconPath": "/image/tabbar/fen-icon.png",
         "selectedIconPath": "/image/tabbar/fen-selectIcon.png"
       },
-      {
-        "pagePath": "pages/search/search",
-        "text": "Search"
-      },
+      
       {
         "pagePath": "pages/saves/saves",
         "text": "Saves",

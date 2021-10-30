@@ -1,66 +1,30 @@
-// pages/search/search.js
 Page({
-
-  /**
-   * Page initial data
-   */
-  data: {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
-  }
+	data: {
+		searchHistory: []
+	},
+	/**
+	 * 搜索事件
+	 * @param {Object} e 
+	 */
+	search(e){
+		this.setData({
+			searchHistory: [...this.data.searchHistory,e.detail.value]
+		})
+	},
+	/**
+	 * 取消搜索事件
+	 */
+	cancelSearch(){
+		wx.navigateBack({
+			delta: 1,
+		})
+	},
+	/**
+	 * 清空历史记录
+	 */
+	clearHistory(){
+		this.setData({
+			searchHistory: []
+		})
+	}
 })

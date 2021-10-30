@@ -58,12 +58,6 @@ Page({
 			url: './phoneLogin/phoneLogin',
 		});
 	},
-	openSwitch() {
-		const that = this;
-		that.setData({
-			show: true
-		})
-	},
 	close() {
 		const that = this;
 		that.setData({
@@ -75,5 +69,21 @@ Page({
 		that.setData({
 			activeIndex: e.currentTarget.dataset.activeindex
 		})
+	},
+	gotoUserinfo() {
+		wx.navigateTo({
+			url: './userinfo/userinfo',
+		});
+	},
+	gotoPreference() {
+		wx.navigateTo({
+			url: './preference/preference',
+		});
+	},
+	gotoMBTI() {
+		wx.navigateTo({
+			url: './mbti/mbti',
+		});
 	}
+
 })
