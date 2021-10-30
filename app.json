@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/user/phoneLogin/phoneLogin",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/saves/saves",
+    "pages/recommend/recommend"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "RoomWe",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "/image/tabbar/home-icon.png",
+        "selectedIconPath": "/image/tabbar/home-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "Recommendation",
+        "iconPath": "/image/tabbar/fen-icon.png",
+        "selectedIconPath": "/image/tabbar/fen-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "Search"
+      },
+      {
+        "pagePath": "pages/saves/saves",
+        "text": "Saves",
+        "iconPath": "/image/tabbar/collection-icon.png",
+        "selectedIconPath": "/image/tabbar/collection-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "My Profile",
+        "iconPath": "/image/tabbar/user-icon.png",
+        "selectedIconPath": "/image/tabbar/user-selectIcon.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
