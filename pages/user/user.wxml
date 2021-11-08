@@ -53,16 +53,16 @@
 				</view>
 			</view>
 
-			<view class="hmly-choice-item" bindtap="gotoMBTI">
+			<view class="hmly-choice-item" bindtap="personality">
 				<view class="">
-					<text style="margin-left:20rpx">Identify My Personality</text>
+					<text style="margin-left:20rpx">Identify My Personality </text>
 				</view>
 			</view>
 
 			<view class="hmly-choice-item" bindtap="gotoLogin">
 				<view class="">
 					<text style="margin-left:20rpx">Log Out</text>
-				</view>
+				</view>	
 			</view>
 		</view>
 	</view>

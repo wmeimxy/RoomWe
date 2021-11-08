@@ -1,0 +1,21 @@
+<block wx:if="{{true}}">
+  <view style = "text-align: center; margin: 5mm;"> Have you ever took MBTI Personality Test before? </view>
+
+  <view class="view-contain-ti">
+    <text class="text-ti">yes</text>
+    <input class="input1"></input>
+</view>
+
+<view>
+      <button 
+          type="primary"
+          size="{{primarySize}}"
+          loading="{{loading}}"
+          plain="{{plain}}"
+          disabled="{{disabled}}"
+          bindtap="gotombti"
+          >take the test now </button>
+</view>
+</block>
+
+

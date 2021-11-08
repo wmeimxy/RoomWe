@@ -4,7 +4,10 @@
     "pages/index/index",
     "pages/search/search",
     "pages/user/user",
-    "pages/saves/saves"
+    "pages/saves/saves",
+    "pages/user/personality/personality",
+    "pages/user/personality/yes/yes",
+    "pages/user/personality/no/no"
   ],
   "window":{
     "backgroundTextStyle":"light",

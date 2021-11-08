@@ -80,10 +80,10 @@ Page({
 			url: './preference/preference',
 		});
 	},
-	gotoMBTI() {
-		wx.navigateTo({
-			url: './mbti/mbti',
-		});
-	}
+	personality() {
+        wx.navigateTo({
+          url: './personality/personality',
+        });
+    }
 
 })
