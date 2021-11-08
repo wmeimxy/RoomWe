@@ -34,3 +34,20 @@
 		</view>
 	</view>
 </view>
+<view class="container">
+  <view class="list">
+    <view class="search-cat" wx:for="{{searchList}}" wx:for-item="p" wx:for-index="pIndex" wx:key="">
+      <view class="search-title">{{p.screenKey}}</view>
+      <view class="search-items">
+        <view bindtap="onChange" wx:for="{{p.screenValue}}" wx:for-item="g" data-parent-index="{{ pIndex }}" data-index="{{ index }}"
+          data-item="{{ p }}" class="item {{ g.checked ? 'active' : '' }}" wx:key=""  >
+          {{g.value}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="search-bottom">
+    <view class="cancel" bindtap="doCancel">Cancel</view>
+    <view class="confirm" bindtap="doSubmit">Confirm</view>
+  </view>
+</view>
