@@ -2,7 +2,7 @@
   <view style = "text-align: center; margin: 5mm;"> Have you ever took MBTI Personality Test before? </view>
 
   <view class="view-contain-ti">
-    <text class="text-ti">yes</text>
+    <text class="text-ti">if yes, please choose your personality test</text>
     <input class="input1"></input>
 </view>
 

@@ -5,9 +5,7 @@ Page({
         });
     },
 
-    gotombti() {
-        wx.navigateTo({
-         url: 'https://www.16personalities.com/free-personality-test',
-        });
+    gotombti(options) {
+
     }
 })
