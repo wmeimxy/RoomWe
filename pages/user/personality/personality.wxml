@@ -1,10 +1,24 @@
 <block wx:if="{{true}}">
-  <view style = "text-align: center; margin: 5mm;"> Have you ever took MBTI Personality Test before? </view>
 
-  <view class="view-contain-ti">
-    <text class="text-ti">if yes, please choose your personality test</text>
-    <input class="input1"></input>
+<view style = "text-align: center; margin: 5mm;"> Have you ever took MBTI Personality Test before? </view>
+
+<view class="section">
+  <view style = "text-align: left; margin: 5mm;">
+  <pre>
+  If yes,
+  plese select your personality type:</pre>
 </view>
+
+<view style="margin : 5mm">your personality is {{year}}</view>
+ <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+ <picker-view-column>
+ <view wx:for="{{years}}" style="text-align: center;line-height: 50px">{{item}}</view>
+ </picker-view-column>
+ </picker-view>
+
+</view>
+
+<view style = "text-align: center; margin: 5mm;"> Or </view>
 
 <view>
       <button 
@@ -17,5 +31,3 @@
           >take the test now </button>
 </view>
 </block>
-
-
