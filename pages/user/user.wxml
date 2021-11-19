@@ -28,14 +28,12 @@
 					</view>
 
 					<view class="hmly-nickname">
-					<text class="#">Name</text>
-					<!--因为本来是中文“微信用户”，暂时改成英文-->
-						<!--<text class="#">{{nickName}}</text>-->
+					<text class="#">{{nickName}}</text>
 					</view>
 
 				</view>
 			</view>
-			<text style="margin-left:50rpx">Description</text>
+			<text style="margin-left:50rpx">{{Description}}</text>
 		</view>
 		<!-- menu部分 -->
 		<view class="hmly-chioce">
