@@ -1,18 +1,13 @@
 <view class="hmly-main bg-white" style="min-height:{{height}}px">
-	<view class="hmly-content_">
-  <!-- 提示标语 -->
-    <text style="padding:20rpx">Welcome to RoomWe!</text>
-
-    <text style="padding:20rpx">A student-developed platform for Boston University students to find their ideal roommate</text>
-
-    <text style="padding:20rpx">Log in to find your ideal roommate</text>
 
 		<!-- 微信登录 -->
-		<view class="hmly-wechat">
 			<view class="hmly-wecaht-login">
-				<button bindtap="getUserProfile"><text class="icon-wechat"></text>WeChat Log In</button>
+				<!-- logo -->
+				<image src="/image/logo.png" style="text-align: center;"></image>
+				<button bindtap="getUserProfile">
+					<text class="icon-text"></text>WeChat Log In</button>
+				<button bindtap="getUserSignUp">
+					<text class="icon-text"></text>WeChat Sign Up</button>
 			</view>
-		</view>
 
-	</view>
 </view>

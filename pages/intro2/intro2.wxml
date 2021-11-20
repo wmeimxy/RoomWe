@@ -1,0 +1,26 @@
+<view class="body">
+  <view class="main-content">
+
+    <text class="title">Set Up Your Profile</text>
+
+    <view class="items">Please select your gender?
+    <view class="iconusecont-div {{state==index?'active-tag':''}}" bindtap="select_use" wx:for="{{genderList}}" data-key='{{index}}'>
+      <view class="flex-item">
+        <text class='gender'>{{item.gender}}</text>
+      </view>
+    </view>
+  </view>
+
+    <view class="items">What is your age?
+      <input class="input" type="number" placeholder="Please enter your age" placeholder-class="placeholder" bindinput="usernameInput"/>
+    </view>
+    
+    <view>
+      
+    </view>
+    <view class="items">
+      <button class="next" bindtap="gotoHome">Finish</button>
+    </view>
+
+  </view>
+</view>

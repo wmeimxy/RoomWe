@@ -1,0 +1,24 @@
+<view class="body">
+  <view class="main-content">
+    <text class="title">Hello, Welcome to RoomWe!</text>
+
+    <text class="subtitle">Please enter your personal information</text>
+
+    <view class="items">What is your name?
+      <input class="input" type="text" placeholder="Please write your name" placeholder-class="placeholder" bindinput="usernameInput"/>
+    </view>
+
+    <view class="items">Please select where you plan to live?
+    <view class="iconusecont-div {{state==index?'active-tag':''}}" bindtap="select_use" wx:for="{{campusList}}" data-key='{{index}}'>
+      <view class="flex-item">
+        <text class='campus'>{{item.campus}}</text>
+      </view>
+    </view>
+  </view>
+
+    <view class="items">
+      <button class="next" bindtap="gotoIntro2">Next</button>
+    </view>
+
+  </view>
+</view>
