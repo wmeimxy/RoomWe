@@ -4,9 +4,9 @@
 			<view class="hmly-wecaht-login">
 				<!-- logo -->
 				<image src="/image/logo.png" style="text-align: center;"></image>
-				<button bindtap="getUserProfile">
+				<button bindtap="getUserProfile" class="login-button" hover-class="hover">
 					<text class="icon-text"></text>WeChat Log In</button>
-				<button bindtap="getUserSignUp">
+				<button bindtap="getUserSignUp" class="login-button" hover-class="hover">
 					<text class="icon-text"></text>WeChat Sign Up</button>
 			</view>
 

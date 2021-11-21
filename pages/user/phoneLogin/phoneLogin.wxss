@@ -21,12 +21,21 @@
 	margin: auto;
 }
 
-.hmly-wecaht-login button {
+.login-button {
 	width: 400rpx;
-	height: 100rpx;
-	border-radius: 50rpx;
-	background: #5C4DB1;
-	color: #FFBF67;
-	font-size: 38rpx;
+	height: 85rpx;
+	border-radius: 30rpx;
+	background-color: #fff;
+	border: solid #5C4DB1 2rpx;
+	color: #5C4DB1;
 	margin: 30rpx;
+}
+
+.icon-text{
+	font-size: 38rpx;
+}
+
+.hover{
+	background-color: #5C4DB1;
+	color: #FFBF67;
 }
