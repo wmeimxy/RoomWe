@@ -8,13 +8,8 @@ Page({
 	 */
 	data: {
 		imgList: [
-			'/image/swiper/ad1.jpg',
-			'/image/swiper/ad2.jpg',
-			'/image/swiper/ad3.jpg',
-			'/image/swiper/ad4.jpg',
-			'/image/swiper/ad5.jpg',
-			'/image/swiper/ad6.jpg',
-			'/image/swiper/ad7.jpg'
+			'/image/swiper/roomwe banner 1_画板 1.png',
+			'/image/swiper/roomwe banner 2_画板 1.png'
 		],
 		navList: [{
 			icon: '/image/nav-icon/diantai.png',

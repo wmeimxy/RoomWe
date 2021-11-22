@@ -27,6 +27,6 @@
 	border-radius: 50rpx;
 	background: #5C4DB1;
 	color: #FFBF67;
-	font-size: 38rpx;
+	font-size: 35rpx;
 	margin: 30rpx;
 }

@@ -61,6 +61,7 @@ margin-top: 20rpx;
 }
 
 .next{
+  display: block;
   background-color: #DFDEFF;
   margin-top: 100rpx;
   border-radius: 10rpx;
