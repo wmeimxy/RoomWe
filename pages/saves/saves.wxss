@@ -29,7 +29,7 @@
 	bottom: 0rpx;
 	left: 50rpx;
 	border-radius: 15rpx;
-	background: #ff520f;
+	background: #5C4DB1;
 }
 
 .hmly-active {

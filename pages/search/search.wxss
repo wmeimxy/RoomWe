@@ -144,8 +144,8 @@
 }
 
 .search-items .item.active {
-	background: #ff5000;
-	color: #fff;
+	background: #5C4DB1;
+	color: #FFBF67;
 }
 
 .search-bottom {
@@ -164,13 +164,13 @@
 }
 
 .search-bottom .cancel {
-	background: #ececf0;
-	color: #8D8D96;
+	background: #DFDEFF;
+	color: #A7A7A7;
 	flex: 1;
 }
 
 .search-bottom .confirm {
-	background: #FF5000;
-	color: #fff;
+	background: #5C4DB1;
+	color: #FFBF67;
 	flex: 1;
 }
