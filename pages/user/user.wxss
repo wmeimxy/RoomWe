@@ -22,9 +22,10 @@
 .hmly-avatar-nickname {
 	width: 70%;
 	height: 100%;
-	display: flex;
+	display: block;
 	justify-content: start;
 	align-items: center;
+	justify-content: center;
 }
 
 .hmly-avatar {
@@ -36,7 +37,10 @@
 .hmly-avatar-img {
 	width: 120rpx;
 	height: 120rpx;
+	border: solid;
 	border-radius: 50%;
+	overflow: hidden;
+	justify-content: center;
 }
 
 .hmly-nickname {
