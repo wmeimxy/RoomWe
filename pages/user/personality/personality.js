@@ -1,4 +1,4 @@
-const years = ["ESTJ","ESTP","ESFJ","ESFP","ENTJ", "ENTP","ENFJ","ENFP","ISTJ","ISTP","ISFJ","ISFP","INTJ", "INTP","INFJ","INFP"]
+
 
 Page({
   onLoad: function (options) {
@@ -6,11 +6,12 @@ Page({
   },
 
   data: {
-    years: years,
+    personalities : ["Please select here","ESTJ","ESTP","ESFJ","ESFP","ENTJ", "ENTP","ENFJ","ENFP","ISTJ","ISTP","ISFJ","ISFP","INTJ", "INTP","INFJ","INFP"],
+    index: 0
     },
     bindChange: function(e) {
     this.setData({
-    year: this.data.years[0],
+      index: e.detail.value
     })
     },
      
