@@ -13,6 +13,17 @@ Page({
 		],
 		swiperCurrent: 0,
 	},
+	onReady: function () {
+		const arr = ["Ziran Liu, 2022",
+					"Cherry Li, 2022",
+					"Micky Xu, 2022",
+					"Lina Guo, 2022",
+					]
+		/*for (let i = 0; i < 20; i++) arr.push("Ziran Liu, 2022")*/
+		this.setData({
+		arr
+		})
+		},
 	onLoad: function (options) {
 		const that = this
 		myRequest.getData().then(res => {

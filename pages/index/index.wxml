@@ -5,8 +5,40 @@
 		<!-- 轮播图图片 -->
 		<swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key="index">
 			<!-- 加上widthFix可以使图片自适应 -->
-			<image src="{{item}}" style="width:375px; height: 196px;"></image>
+			<image class="swiper-image" src="{{item}}" mode="aspectFit"></image>
 		</swiper-item>
 	</swiper>
 </view>
 	<!-- 轮播图结束 -->
+
+
+<!-- 左滑 右滑 -->
+<view class="recommands"> Roomates for you >
+</view>
+<scroll-view
+scroll-x="{{true}}" style=" width:100%;"
+refresher-enabled="{{true}}"
+refresher-threshold="{{100}}"
+refresher-default-style="white"
+refresher-background="lightgreen"
+refresher-triggered="{{triggered}}"
+bindrefresherpulling="onPulling"
+bindrefresherrefresh="onRefresh"
+bindrefresherrestore="onRestore"
+bindrefresherabort="onAbort"
+>
+<view class="scroll-box" style="white-space:nowrap;">
+<view class="box" wx:for="{{arr}}" >
+<view class="personalinfobox">
+<image class="profilePic" src="../../image/profile_pic.png" mode="aspectFill"/>
+<view class="name">{{item}}</view>
+<view class="alltags">
+<view class="tag">Pet friendly</view>
+<view class="tag">Non drinker</view>
+<view class="tag">Neat</view>
+</view>
+</view>
+
+</view>
+</view>
+</scroll-view>

@@ -1,4 +1,83 @@
 .hmly-swiper-container{
-	width:375px; 
-	height: 200px;
+	width:100%;
+	
 }
+.hmly-swiper{
+	border-radius: 20rpx;
+	margin: 20rpx;
+	margin-left: 40rpx;
+	margin-right: 40rpx;
+
+
+}
+.swiper-image{
+	border-radius: 20rpx;
+	width: 100%;
+	height: 100%;
+}
+.recommands{
+	margin: 20rpx;
+	margin-bottom: -20rpx;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 40px;
+	color: #383737;
+}
+.scroll-box {
+	width: 100%;
+	white-space: nowrap;
+	}
+	.scroll-box .box{
+	display:inline-block;
+	border:1px solid rgb(255, 255, 255);
+	display:inline-block;
+	height: 550rpx;
+	width:400rpx;
+	}
+	.personalinfobox{
+	height: 520rpx;
+	width:380rpx;
+	margin: 20rpx auto;
+	border: 1px solid rgb(228, 225, 225);
+	border-radius: 20rpx;
+	box-sizing: border-box;
+	text-align: left;
+	box-shadow: 0 0 5rpx 0 rgb(182, 180, 180);
+	}
+	.profilePic{
+	width:100%;
+	height: 280rpx;
+	margin-top: 0rpx;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
+	}
+	.name{
+	margin-top: 10rpx;
+	margin-left: 30rpx;
+	font-family: Nunito;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 27px;
+	color: #383737;
+	}
+	.alltags{
+	margin-left: 20rpx;
+	}
+	.tag{
+	padding: 10rpx;
+	padding-right: 20rpx;
+	padding-left: 20rpx;
+	margin: 10rpx;
+	display:inline;
+	float:left;
+	width: auto;
+	height: 35rpx;
+	text-align: center;
+	background: #DFDEFF;
+	border-radius: 4px;
+	font-size: 10px;
+	line-height: 12px;
+	color: #383737;
+	}
