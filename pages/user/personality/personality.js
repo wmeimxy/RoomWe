@@ -1,5 +1,3 @@
-
-
 Page({
   onLoad: function (options) {
   var mbti = wx.getStorageSync('MBTI')
@@ -14,7 +12,6 @@ Page({
       index: e.detail.value
     })
     },
-     
 	yes() {
         wx.navigateTo({
           url: './yes/yes',
@@ -23,9 +20,8 @@ Page({
 
     gotombti(options) {
         wx.navigateTo({
-          url: './no/no',
+          url: '/pages/test/test',
         })
     }
-    
 })
 

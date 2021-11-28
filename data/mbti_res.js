@@ -2,6 +2,24 @@ var mbti_id = ["ISTJ", "ISFJ", "INFJ", "INTJ",
   "ISTP", "ISFP", "INFP", "INTP",
   "ESTP", "ESFP", "ENFP", "ENTP",
   "ESTJ", "ESFJ", "ENFJ", "ENTJ"]
+var mbti_img = [
+"/image/16Results/ISTJ.png", 
+"/image/16Results/ISFJ.png",
+"/image/16Results/INFJ.png",
+"/image/16Results/INTJ.jpg",
+"/image/16Results/ISTP.png",
+"/image/16Results/ISFP.png",
+"/image/16Results/INFP.png",
+"/image/16Results/INTP.png",
+"/image/16Results/ESTP.png",
+"/image/16Results/ESFP.png",
+"/image/16Results/ENFP.png",
+"/image/16Results/ENTP.png",
+"/image/16Results/ESTJ.png",
+"/image/16Results/ESFJ.png",
+"/image/16Results/ENFJ.png",
+"/image/16Results/ENTJ.png",]
+
 var mbti_name_en = ["Inspector", "Protector", "Counselor", "Mastermind/Scientist",
   "Operator/Instrumentor", "Composer/Artist", "Healer/Tutor", "Architect/Designer",
   "Promotor", "Performer/Demonstrator", "Champion/Advocate/Motivator", "Invertor",
@@ -145,3 +163,4 @@ module.exports.mbti_en = mbti_name_en;
 module.exports.mbti_id = mbti_id;
 module.exports.mbti_des = mbti_des;
 module.exports.mbtiEasyDes = mbti_easy_des;
+module.exports.mbti_img = mbti_img;

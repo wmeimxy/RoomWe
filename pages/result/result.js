@@ -15,6 +15,7 @@ Page({
     mbtiDesArr: mbti.mbti_des,
     mbtiCN: mbti.mbti_cn,
     mbtiEN: mbti.mbti_en,
+    mbti_img: mbti.mbti_img,
     isDone: false,
     //possible_mbti: [],
   },
@@ -71,15 +72,6 @@ Page({
   goToUser: function () {
     wx.switchTab({
       url: '/pages/user/user',
-    })
-  },
-
-  //请联系制作者
-  connectAuthor: function () {
-    wx.showModal({
-      title: '索要书籍',
-      content: '请联系作者邮箱：445395697@qq.com',
-      showCancel: false
     })
   },
 

@@ -4,7 +4,7 @@ let userInfo = app.globalData.userInfo;
 Page({
   data: {
     loading: true,
-    List: [{
+    genderList: [{
     "gender": "Male" 
     },{
     "gender": "Female"

@@ -10,22 +10,22 @@
 }
 
 .hmly-user-img {
-	width: 95%;
-	height: 200rpx;
-	margin: 0rpx auto;
+	margin: 30rpx auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
-.hmly-avatar-nickname {
+.usernmae{
 	width: 70%;
 	height: 100%;
-	display: block;
-	justify-content: start;
-	align-items: center;
-	justify-content: center;
+	display: flex;
+	text-align: center;
+	margin: auto;
 }
 
 .hmly-avatar {

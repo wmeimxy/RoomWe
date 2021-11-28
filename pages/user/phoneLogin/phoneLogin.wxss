@@ -2,6 +2,9 @@
 	font-family: 'Nunito', sans-serif;
 	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
 }
+.hmly-main bg-white{
+	font-family: 'Nunito';
+}
 
 .hmly-main {
 	width: 100%;
@@ -29,6 +32,7 @@
 	border: solid #5C4DB1 2rpx;
 	color: #5C4DB1;
 	margin: 30rpx;
+	padding: 5px;
 }
 
 .icon-text{

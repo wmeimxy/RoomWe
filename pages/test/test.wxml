@@ -1,16 +1,23 @@
 <!--pages/test/test.wxml-->
-<progress percent="{{(id+1)*100/numOfAll}}" stroke-width="12" color="black" />
+<progress percent="{{(id+1)*100/numOfAll}}" stroke-width="12" color="#FFBF67" />
 
-<view class="container">
-  <text wx:if="{{id < numOfAll}}" class="question">{{question[qid]}}</text>
-  <view class="ans-sheet">
-    <text wx:if="{{id < numOfAll}}" class="ans1" bindtap="on_ans" data-id="{{id}}" data-bool="{{true}}">{{ans[id].ans1}}</text>
-    <text wx:if="{{id < numOfAll}}" class="ans2" bindtap="on_ans" data-id="{{id}}" data-bool="{{false}}">{{ans[id].ans2}}</text>
+<view class="body">
 
-  </view>
+
+  <view class="title">Question {{(id+1)}}/87</view>
+<view class="question">
+  <text wx:if="{{id < numOfAll}}">{{question[qid]}}</text>
 </view>
-<view class="skip-return">
-  <view class="blank"></view>
-  <text hidden="{{!boolReturn}}" class="return" catchtap="on_return" data-id='{{id}}'>重做上一题</text>
-  <text hidden="{{!boolSkip}}" class="skip" catchtap="on_skip" data-id="{{id}}">跳过本题</text>
+
+  <view class="ans-sheet">
+    <view wx:if="{{id < numOfAll}}" class="ans1" hover-class="hover" hover-stay-time="100" data-id="{{id}}" data-bool="{{true}}" bindtap="on_ans">{{ans[id].ans1}}</view>
+    <view wx:if="{{id < numOfAll}}" class="ans2" hover-class="hover" hover-stay-time="100" data-id="{{id}}" data-bool="{{false}}" bindtap="on_ans">{{ans[id].ans2}}</view>
+  </view>
+
+  <text hidden="{{id!=0}}" class="blank"></text>
+
+  <view wx:if="{{id != 0}}" hidden="{{!boolReturn}}" class="on_return" catchtap="on_return" hover-class="btn-hover" hover-stay-time="100" data-id='{{id}}'>Previous</view>
+
+  <view class="on_skip" hover-class="btn-hover" hover-stay-time="100" hidden="{{!boolSkip}}" catchtap="on_skip" data-id="{{id}}">Skip</view>
+
 </view>

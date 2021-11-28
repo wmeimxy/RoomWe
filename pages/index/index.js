@@ -11,28 +11,6 @@ Page({
 			'/image/swiper/roomwe banner 1_画板 1.png',
 			'/image/swiper/roomwe banner 2_画板 1.png'
 		],
-		navList: [{
-			icon: '/image/nav-icon/diantai.png',
-			events: 'goToBangDan',
-			text: '榜单'
-		},
-		{
-			icon: '/image/nav-icon/diantai.png',
-			events: 'goToBangDan',
-			text: '听小说'
-		},
-		{
-			icon: '/image/nav-icon/diantai.png',
-			events: 'goToBangDan',
-			text: '情感电台'
-		},
-		{
-			icon: '/image/nav-icon/diantai.png',
-			events: 'goToBangDan',
-			text: '听知识'
-		},
-
-		],
 		swiperCurrent: 0,
 	},
 	onLoad: function (options) {
@@ -42,9 +20,6 @@ Page({
 			that.setData({
 				showitem: true,
 				guess: guess.list.slice(0, 3),
-				xiaoshuocontent: hotRecommends.list[0].list,
-				xiangshengcontent: hotRecommends.list[2].list,
-				tuokocontent: hotRecommends.list[4].list
 			})
 		}).catch(err => {
 			console.log('error :>> ', err);
@@ -59,17 +34,4 @@ Page({
 			swiperCurrent: e.detail.current
 		})
 	},
-	goToBangDan: function () {
-		wx.navigateTo({
-			url: '/pages/index/bangdan/bangdan',
-		})
-	},
-	gotoDetails(e) {
-		const url = e.currentTarget.dataset.coverimg;
-		const title = e.currentTarget.dataset.title;
-		wx.navigateTo({
-			// 页面传参
-			url: '/pages/details/details?url=' + url + '&title=' + title,
-		})
-	}
 })

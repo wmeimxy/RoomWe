@@ -198,6 +198,7 @@ Page({
     //是否显示“跳过本题”
     var boolSkip = this.can_skip(id)
     this.setData({ boolSkip: boolSkip })
+    this.setData({ boolReturn: true })
   },
 
   onLoad: function (options) {

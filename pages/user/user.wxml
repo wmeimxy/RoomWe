@@ -26,7 +26,9 @@
 			</view>
 
 			<view class="hmly-user-nickname">
-				<open-data type="userNickName"></open-data>
+				<view class="usernmae">WeChat Nickname: 
+					<open-data type="userNickName"></open-data>
+				</view>
 			</view>
 			
 		</view>

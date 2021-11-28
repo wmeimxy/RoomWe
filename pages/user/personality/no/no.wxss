@@ -1,23 +1,28 @@
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 10rpx;
+@font-face{
+	font-family: 'Nunito', sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+}
+.body{
+  margin:50rpx;
+  font-family: 'Nunito';
 }
 
 .title{
-  line-height:100rpx;
-  font-family: "宋体";
+  display:block;
+  font-size: 50rpx;
   font-weight: bold;
+  margin-bottom: 70rpx;
+  margin-top: 150rpx;
 }
 
-.main-text{
-  margin-top: 14rpx;
-  font-size: 30rpx;
-  text-align: justify;
-}
-
-.button{
-  margin-top: 65rpx;
+.btn{
+  margin-top:30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  font-size: 17px;
+  box-shadow: 0 6rpx 10rpx 2rpx #A7A7A7;
+  padding: 0;
+  font-weight: 400;
 }
