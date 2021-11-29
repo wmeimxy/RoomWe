@@ -20,7 +20,19 @@ Page({
         }
       })
   },
-  
+  change(e){
+    let that =this 
+    db.collection('Users').doc('winnie').update({
+        data:{
+            "Personality":'1000'
+        },
+        success: function(res) {
+            // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+            console.log('更改成功',res)
+          }
+      })
+},
+
   onGotUserInfo: function(e){
     //将this对象保存到that中
     const that = this

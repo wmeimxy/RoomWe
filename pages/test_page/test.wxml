@@ -9,4 +9,4 @@
   <view class='name'>{{userInfo.nickName}}</view>
 </view>
 
-<button class="primary" bindtap="insert">Click here add data</button>
+<button class="primary" bindtap="change">Click here add data</button>
