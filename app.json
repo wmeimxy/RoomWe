@@ -7,7 +7,8 @@
     "pages/saves/saves",
     "pages/user/personality/personality",
     "pages/user/personality/yes/yes",
-    "pages/user/personality/no/no"
+    "pages/user/personality/no/no",
+    "pages/intros/intros"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -16,33 +17,33 @@
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
-    "color": "",
-    "selectedColor": "",
+    "color": "#5C4DB1",
+    "selectedColor": "#FFBF67",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "Home",
         "iconPath": "/image/home_icon.png",
-        "selectedIconPath": "/image/home_icon的副本-01.png"
+        "selectedIconPath": "/image/home_icon_yellow-01.png"
       },
       {
         "pagePath": "pages/search/search",
         "text": "Search",
-        "iconPath": "/image/search-01.png",
-        "selectedIconPath": "/image/search yellow-01.png"
+        "iconPath": "/image/search.png",
+        "selectedIconPath": "/image/Icon yellow-01.png"
       },
       
       {
         "pagePath": "pages/saves/saves",
         "text": "Saves",
-        "iconPath": "/image/3994430_bookmark_label_ribbon_save_web_icon-01.png",
-        "selectedIconPath": "/image/3994430_bookmark_label_ribbon_save_web_icon的副本-01.png"
+        "iconPath": "/image/collection-icon.png",
+        "selectedIconPath": "/image/save_web_icon_yellow-01.png"
       },
       {
         "pagePath": "pages/user/user",
         "text": "Profile",
         "iconPath": "/image/profile_icon-01.png",
-        "selectedIconPath": "/image/profile_icon的副本-01.png"
+        "selectedIconPath": "/image/profile_icon_yellow-01.png"
       }
     ]
   },

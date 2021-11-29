@@ -3,42 +3,172 @@ let userInfo = app.globalData.userInfo;
 
 Page({
   data: {
+    query:[],
     loading: true,
     username: '',
-    gender:'',
-    campusList: [{
-      "campus": "On-campus" 
-    },
-    {
-      "campus": "Off-campus"
-    },
-    ],
-    state: '',
 
-  },
-  select_use: function(e){
+    campusid:'',
+    campusList:[
+        {Item_id: "1", Item_Name: "On-campus", des: "I wish to live at an on-campus housing"},
+        {Item_id: "2", Item_Name: "Off-campus", des: "I wish to live at an off-campus housing"}],
+    
+    roomid:'',
+    roomList:[
+      {Item_id: "1", Item_Name:"Single room", des: "I wish to live at a single bedroom"},
+      {Item_id: "2", Item_Name:"Shared room", des: "I wish to live at a shared bedroom"},
+    ],
+
+    stayid: '',
+    stayList:[
+      {Item_id: "1", Item_Name:"Staying", des: "I have a place to stay and I need a roommate"},
+      {Item_id: "2", Item_Name:"Moving", des: "I need a place to stay and a roommate"},
+    ],
+
+    location : ["Please select your location","Allston","Backbay","Brighton","Fenway-Kenmore","Malden", "Chinatown","Downtown","East Boston","Brookline","Jamaica Plain","South Boston","North End","Charlestown", "Other",],
+    index: 0,
+
+    styleid: '',
+    styleList:[
+      {Item_id: "1", Item_Name:"Dorm"},
+      {Item_id: "2", Item_Name:"Apartment"},
+      {Item_id: "3", Item_Name:"House"},
+    ],
+
+    genderList:[
+      "Please select your gender here", "Male", "Female", "Non-binary", "Agender", "Trans*", "Other identities",
+    ],
+    genderindex: 0,
+
+    timeList:[
+      "When do you need to find a roommate","Anytime", "Full School Year", "Spring semester", "Fall semester", "Summer",
+    ],
+    timeindex: 0,
+
+    yearList:[
+      "Please select your school year", "Freshmen", "Sophomore", "Junior", "Senior", "Graduate Student"
+    ],
+    yearindex:0,
+
+    LSList:[
+      {Item_id:"1", Item_Name:"Pets Friendly", isSelect: false},
+      {Item_id:"2", Item_Name:"Neat", isSelect: false},
+      {Item_id:"3", Item_Name:"Non-drinker", isSelect: false},
+      {Item_id:"4", Item_Name:"Love to drink", isSelect: false},
+      {Item_id:"5", Item_Name:"Early Birds", isSelect: false},
+      {Item_id:"6", Item_Name:"Night Birds", isSelect: false},
+      {Item_id:"7", Item_Name:"Party Person", isSelect: false},
+      {Item_id:"8", Item_Name:"Enjoy Being Alone", isSelect: false},
+    ],
+
+    checkboxArr: [{
+      name: 'Pets Friendly',
+      checked: false
+     }, {
+      name: 'Neat',
+      checked: false
+     }, {
+      name: 'Non-drinker',
+      checked: false
+     }, {
+      name: 'Love to drink',
+      checked: false
+     }, {
+      name: 'Early Birds',
+      checked: false
+     }, {
+      name: 'Night Birds',
+      checked: false
+     },{
+       name:'Party Person',
+       checked: false
+     },{
+       name: 'Enjoy Being Alone',
+       checked: false
+     }],
+    },
+
+  selectCampus:function(e){
+    let campusid = e.target.dataset.id
+     this.setData({
+       campusid: campusid
+     })
+    },
+
+  selectRoom:function(e){
+    let roomid = e.target.dataset.id
     this.setData({
-      state: e.currentTarget.dataset.key,
+      roomid: roomid
     })
   },
-  usernameInput:function(e){
+  selectStay: function(e){
+    let stayid=e.target.dataset.id
     this.setData({
-      username: e.detail.vlaue
+      stayid: stayid
     })
   },
-  genderInput:function(e){
+  selectGender:function(e){
+    let genderid = e.target.dataset.id
     this.setData({
-      gender: e.detail.vlaue
+      genderid: genderid
     })
   },
-  campusInput:function(e){
+  selectStyle:function(e){
+    let styleid = e.target.dataset.id
     this.setData({
-      campus: e.detail.vlaue
+      styleid: styleid
     })
   },
-  gotoIntro2() {
-		wx.navigateTo({
-      url: '/pages/intro2/intro2',
+  bindPickerChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindPickerChangeGender: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      genderindex: e.detail.value
+    })
+  },
+  bindPickerChangeTime: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      timeindex: e.detail.value
+    })
+  },
+  bindPickerChangeYear: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      yearindex: e.detail.value
+    })
+  },
+  checkbox: function (e) {
+    var index = e.currentTarget.dataset.index;//获取当前点击的下标
+    var checkboxArr = this.data.checkboxArr;//选项集合
+    checkboxArr[index].checked = !checkboxArr[index].checked;//改变当前选中的checked值
+    this.setData({
+     checkboxArr: checkboxArr
     });
-	},
+    },
+    checkboxChange: function (e) {
+    var checkValue = e.detail.value;
+    this.setData({
+     checkValue: checkValue
+    });
+    },
+    confirm: function() {// 提交
+    console.log(this.data.checkValue)//所有选中的项的value
+    },
+
+  gotohome() {
+		wx.switchTab({
+      url: '/pages/index/index',
+    });
+  },
+
+  doCancel(){
+      wx.navigateTo({
+        url: '/pages/user/phoneLogin/phoneLogin',
+      })
+  }
 })

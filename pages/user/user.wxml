@@ -42,7 +42,7 @@
 				</view>
 			</view>
 
-			<view class="hmly-choice-item" bindtap="gotoPreference">
+			<view class="hmly-choice-item" bindtap="gotointro">
 				<view class="">
 					<text style="margin-left:20rpx">Change My Housing Preference</text>
 				</view>

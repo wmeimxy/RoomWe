@@ -84,6 +84,11 @@ Page({
         wx.navigateTo({
           url: './personality/personality',
         });
-    }
+		},
+	gotointro(){
+		wx.navigateTo({
+			url: '/pages/intros/intros',
+		})
+	}
 
 })

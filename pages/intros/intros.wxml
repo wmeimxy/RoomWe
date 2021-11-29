@@ -1,24 +1,93 @@
 <view class="body">
   <view class="main-content">
     <text class="title">Hello, Welcome to RoomWe!</text>
+    <text class="subtitle">Please fill out your preference to get started with your search.</text>
+   
+   <!--Q1-->
 
-    <text class="subtitle">Please enter your personal information</text>
+   <text class="question">Please select where are you planning to live?</text>
 
-    <view class="items">What is your name?
-      <input class="input" type="text" placeholder="Please write your name" placeholder-class="placeholder" bindinput="usernameInput"/>
-    </view>
+   <view class="item1">
+    <view class="sign-setting-border {{campusid==item.Item_id?'selected':''}}" 
+    wx:for="{{campusList}}" bindtap='selectCampus' data-id="{{item.Item_id}}">
+    {{item.Item_Name}}</view>
+  </view>
 
-    <view class="items">Please select where you plan to live?
-    <view class="iconusecont-div {{state==index?'active-tag':''}}" bindtap="select_use" wx:for="{{campusList}}" data-key='{{index}}'>
-      <view class="flex-item">
-        <text class='campus'>{{item.campus}}</text>
-      </view>
+  <view class="item2">
+    <view class="description" wx:for="{{campusList}}">{{item.des}}</view>
+  </view>
+
+
+ <!--Q2-->
+
+  <text class="question">What are you looking for?</text>
+  <view class="item1">
+    <view class="sign-setting-border {{roomid==item.Item_id?'selected':''}}" 
+    wx:for="{{roomList}}" bindtap='selectRoom' data-id="{{item.Item_id}}">
+    {{item.Item_Name}}</view>
+  </view>
+
+  <view class="item2">
+    <view class="description" wx:for="{{roomList}}">{{item.des}}</view>
+  </view>
+
+ <!--Q3-->
+  <text class="question">Staying or Moving?</text>
+  <view class="item1">
+    <view class="sign-setting-border {{stayid==item.Item_id?'selected':''}}" 
+    wx:for="{{stayList}}" bindtap='selectStay' data-id="{{item.Item_id}}">
+    {{item.Item_Name}}</view>
+  </view>
+
+  <view class="item2">
+    <view class="description" wx:for="{{stayList}}">{{item.des}}</view>
+  </view>
+
+ <!--Q4-->
+ <text class="question">Your Location</text>
+    <picker style="margin : 5mm" mode="selector" range="{{location}}" value="{{index}}" bindchange="bindPickerChange" class="picker">
+      <text class="picker-text">{{location[index]}}</text>
+    </picker>
+
+<!--Q5-->
+<text class="question">Housing Style</text>
+  <view class="item">
+    <view class="sign-setting-border {{styleid==item.Item_id?'selected':''}}" 
+    wx:for="{{styleList}}" bindtap='selectStyle' data-id="{{item.Item_id}}">
+    {{item.Item_Name}}
     </view>
   </view>
 
-    <view class="items">
-      <button class="next" bindtap="gotoIntro2">Next</button>
-    </view>
+<!--Q6-->
+<text class="question">Gender</text>
+    <picker style="margin : 5mm" mode="selector" range="{{genderList}}" value="{{genderindex}}" bindchange="bindPickerChangeGender" class="picker">
+      <text class="picker-text">{{genderList[genderindex]}}</text>
+    </picker>
 
+<!--Q7-->
+    <text class="question">Time Needed</text>
+    <picker style="margin : 5mm" mode="selector" range="{{timeList}}" value="{{timeindex}}" bindchange="bindPickerChangeTime" class="picker">
+      <text class="picker-text">{{timeList[timeindex]}}</text>
+    </picker>
+
+<!--Q8-->
+    <text class="question">School Year</text>
+    <picker style="margin : 5mm" mode="selector" range="{{yearList}}" value="{{yearindex}}" bindchange="bindPickerChangeYear" class="picker">
+      <text class="picker-text">{{yearList[yearindex]}}</text>
+    </picker>
+
+<!--Q9-->
+  <text class="question">My Lifestyle</text>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="{{item.checked?'checkbox checked':'checkbox'}}" wx:for="{{checkboxArr}}" bindtap='checkbox' data-index="{{index}}" wx:key="item.name">
+        <checkbox class="checkbox-text" value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+      </label>
+ </checkbox-group>
+    
+<!--confirm-->
+  <view class="btn" bindtap="gotohome">Continute</view>
+
+<!--cancel-->
+  <view class="cancel" bindtap="doCancel" hover-class="cancel-hover">Cancel/Clear All</view>
   </view>
 </view>

@@ -28,16 +28,25 @@
   text-align:center;
   font-family: 'Nunito';
   font-size: 17px;
+  margin-bottom: 50rpx;
+}
+image{
+  height: 250px;
+  width: 250px;
 }
 .img{
-  max-width: 250px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .btn{
   display: block;
   border-radius: 20rpx;
   border: solid #A7A7A7 1px;
   background-color: white;
-  margin-top: 30rpx;
+  margin-top: 60rpx;
   padding: 10rpx;
   height: 80rpx;
   font-size: 17px;
@@ -47,4 +56,9 @@
   background-color: #5C4DB1;
   border-color: #5C4DB1;
   color: #FFBF67;
+}
+.mbti_des{
+  margin-top: 50rpx; 
+  font-family: 'Nunito';
+  font-size: 17px;
 }

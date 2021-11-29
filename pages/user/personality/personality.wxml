@@ -6,8 +6,8 @@
 
 <view class="section1">
   <view class="section_title">If yes, plese select your personality type</view>
-    <picker style="margin : 5mm" mode="selector" range="{{personalities}}" value="{{index}}" bindchange="changeValue" class="picker">
-    <text>{{personalities[index]}}</text>
+    <picker style="margin : 5mm" mode="selector" range="{{personalities}}" value="{{index}}" bindchange="bindPickerChange">
+    <view class="picker">{{personalities[index]}}</view>
     </picker>
   <button class="btn" bindtap="savembti" style="font-weight: 400;" hover-class="hover">Submit</button>
 </view>
