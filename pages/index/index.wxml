@@ -28,10 +28,12 @@ bindrefresherrestore="onRestore"
 bindrefresherabort="onAbort"
 >
 <view class="scroll-box" style="white-space:nowrap;">
-<view class="box" wx:for="{{arr}}" >
+<view class="box" wx:for="{{userinfo}}" >
 <view class="personalinfobox">
-<image class="profilePic" src="../../image/profile_pic.png" mode="aspectFill"/>
-<view class="name">{{item}}</view>
+<image class="profilePic" wx:key="index" src="{{item.avatar}}" mode="aspectFill"/>
+<view >
+	<view class="name" wx:key="index">{{item.name}}</view>
+</view>
 <view class="alltags">
 <view class="tag">Pet friendly</view>
 <view class="tag">Non drinker</view>

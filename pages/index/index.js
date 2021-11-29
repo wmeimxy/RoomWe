@@ -11,6 +11,18 @@ Page({
 			'/image/swiper/roomwe banner 1_画板 1.png',
 			'/image/swiper/roomwe banner 2_画板 1.png'
 		],
+		userinfo:[
+			{name: "Ziran Liu, 2022", avatar: '/image/profilepics/profile_pic.png'},
+			{name: "Cherry Li, 2022", avatar: '/image/profilepics/pic1.jpeg'},
+			{name: "Micky Xu, 2022", avatar: '/image/profilepics/pic2.jpeg'},
+			{name: "Lina Guo, 2022", avatar: '/image/profilepics/pic3.jpeg'}
+		],
+		profilepiclist:[
+			'/image/profilepics/profile_pic.png',
+			'/image/profilepics/pic1.jpeg',
+			'/image/profilepics/pic2.jpeg',
+			'/image/profilepics/pic3.jpeg'
+		],
 		swiperCurrent: 0,
 	},
 	onReady: function () {
