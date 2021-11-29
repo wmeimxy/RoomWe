@@ -28,7 +28,8 @@ App({
 		})
 			 //云开发初始化
 			 wx.cloud.init({
-				env:"cloud1-7gtebtkf6c1b6fcc"
+				env:"cloud1-7gtebtkf6c1b6fcc",
+				traceUser: true
 			})
 	},
 	globalData: {

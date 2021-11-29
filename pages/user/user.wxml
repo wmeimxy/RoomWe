@@ -36,7 +36,7 @@
 		<view class="hmly-chioce">
 			<!-- 选项item -->
 
-			<view class="hmly-choice-item" bindtap="gotoUserinfo">
+			<view class="hmly-choice-item" bindtap="gototest">
 				<view class="">
 					<text style="margin-left:20rpx">View Complete Profile</text>
 				</view>

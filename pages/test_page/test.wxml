@@ -1,0 +1,12 @@
+<view wx:if="{{!openid}}">
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
+</view>
+
+<!-- 如果openid不为空，就说明用户登录了
+读取用户昵称和用户头像显示到页面上 -->
+<view class="uploader-container" wx:if="{{openid}}">
+  <image class="image" src="{{userInfo.avatarUrl}}"></image>
+  <view class='name'>{{userInfo.nickName}}</view>
+</view>
+
+<button class="primary" bindtap="insert">Click here add data</button>

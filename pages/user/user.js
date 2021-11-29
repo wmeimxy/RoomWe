@@ -1,6 +1,29 @@
 const app = getApp()
 let userInfo = app.globalData.userInfo;
 Page({
+	data:{
+		userInfo:{},
+		openid: "",
+	},
+	onGotUserInfo: function(e){
+    //将this对象保存到that中
+    const that = this
+    wx.cloud.callFunction({
+      name: 'login',
+      success: res => {
+        console.log('云函数调用成功')
+        that.setData({
+          openid: res.result.openid,
+          userInfo: e.detail.userInfo
+        })
+        console.log("userInfo", this.data.userInfo)
+        console.log("openid", this.data.openid)
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
+	},
 
 	onLoad() {
 		const that = this;
@@ -88,6 +111,12 @@ Page({
 	gotointro(){
 		wx.navigateTo({
 			url: '/pages/intros/intros',
+		})
+	},
+	//test
+	gototest(){
+		wx.navigateTo({
+			url: '/pages/test_page/test',
 		})
 	}
 
