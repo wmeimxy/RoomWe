@@ -1,11 +1,3 @@
-<!-- 搜索框 -->
-<view class="hmly-search">
-	<view class="hmly-search-left">
-		<text class="icon-search"></text>
-		<input placeholder="Enter tag or roommate name" bindconfirm="search"></input>
-	</view>
-	<view class="hmly-search-right" bindtap="cancelSearch">Cancel</view>
-</view>
 <!-- 搜索历史 -->
 <view class="hmly-history" wx:if="{{searchHistory.length}}">
 	<!-- 提示标题 -->

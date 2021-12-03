@@ -5,7 +5,7 @@ Page({
     height:0,
     login: false,
     content: [
-      {text: "My Saved Roommate"},
+      {text: "My Saved Roommates"},
       {text: "Invitations"}
     ]
   },

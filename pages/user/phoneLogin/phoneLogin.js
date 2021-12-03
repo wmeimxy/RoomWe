@@ -39,7 +39,7 @@ Page({
           hasUserInfo: true
 				}),
 				wx.navigateTo({
-          url: '/pages/intros/intros',
+          url: '/packageA/pages/intros/intros',
         })
       }
     })

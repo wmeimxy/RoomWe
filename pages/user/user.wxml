@@ -1,21 +1,4 @@
-<!-- pages/user/user.wxml -->
-<block wx:if="{{!login}}">
-	<!-- logo -->
-	<view class="hmly-logo">
-		<image class="hmly-logo-img" src="/image/logo.png" mode="widthFix"></image>
-	</view>
-	<!-- 登录按钮 -->
-	<view class="hmly-login-button">
-		<!-- 在本小程序中只实现了微信登录 -->
-		<view class="hmly-wechat-login">
-			<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
-				<text class="icon-message"></text> Wechat Login
-			</button>
-		</view>
-	</view>
-</block>
-<!-- 已经登录显示界面 -->
-<block wx:else>
+<block>
 	<view class="hmly-body" style="height:{{phoneHeight}}px">
 
 		<!-- 头像昵称部分 -->

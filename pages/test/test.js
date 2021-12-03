@@ -115,7 +115,7 @@ Page({
     wx.setStorageSync('T', rTF)
     wx.setStorageSync('J', rJP)
     wx.navigateTo({
-      url: '/pages/result/result',
+      url: '/packageB/pages/result/result',
     })
   },
 

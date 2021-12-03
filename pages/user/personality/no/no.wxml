@@ -1,6 +1,0 @@
-<view class="body">
-  <view class="title">Start MBTI Test</view>
-    <view>
-      <button class="btn" bindtap="goToTest" size="mini"> {{strStart}} </button>
-    </view>
-</view>

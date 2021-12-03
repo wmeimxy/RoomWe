@@ -4,12 +4,35 @@
     "pages/index/index",
     "pages/search/search",
     "pages/user/user",
-    "pages/saves/saves",
-    "pages/user/personality/personality",
-    "pages/user/personality/yes/yes",
-    "pages/user/personality/no/no",
-    "pages/intros/intros"
+    "pages/saves/saves"
   ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages":[
+        "pages/intros/intros"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages":[
+        "pages/result/result"
+      ]
+    },
+    {
+      "root": "packageC",
+      "pages":[
+        "pages/personality/personality"
+      ]
+    },
+    {
+      "root":"packageD",
+      "pages":[
+        "pages/logs/logs"
+      ]
+    }
+  ],
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#5C4DB1",
@@ -35,7 +58,7 @@
       
       {
         "pagePath": "pages/saves/saves",
-        "text": "Saves",
+        "text": "Saved",
         "iconPath": "/image/collection-icon.png",
         "selectedIconPath": "/image/save_web_icon_yellow-01.png"
       },

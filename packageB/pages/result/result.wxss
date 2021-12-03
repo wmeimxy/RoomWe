@@ -1,0 +1,64 @@
+/* pages/result/result.wxss */
+@font-face{
+  font-family: 'Nunito', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+ }
+ .body{
+   margin:50rpx;
+   font-family: 'Nunito';
+   height: 100%;
+ }
+ 
+ .title{
+   display:block;
+   font-size: 50rpx;
+   font-weight: bold;
+   margin-bottom: 70rpx;
+   margin-top: 150rpx;
+ }
+ 
+ .en{
+   text-align:center;
+   display: block;
+   font-size: 50rpx;
+   font-weight: bold;
+ }
+ .mbti{
+   display: block;
+   text-align:center;
+   font-family: 'Nunito';
+   font-size: 17px;
+   margin-bottom: 50rpx;
+ }
+ image{
+   height: 250px;
+   width: 250px;
+ }
+ .img{
+   display: block;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .btn{
+   display: block;
+   border-radius: 20rpx;
+   border: solid #A7A7A7 1px;
+   background-color: white;
+   margin-top: 60rpx;
+   padding: 10rpx;
+   height: 80rpx;
+   font-size: 17px;
+   box-shadow: 0 6rpx 10rpx 2rpx #A7A7A7;
+ }
+ .hover{
+   background-color: #5C4DB1;
+   border-color: #5C4DB1;
+   color: #FFBF67;
+ }
+ .mbti_des{
+   margin-top: 50rpx; 
+   font-family: 'Nunito';
+   font-size: 17px;
+ }

@@ -1,5 +1,8 @@
 const app = getApp()
 let userInfo = app.globalData.userInfo;
+//cloud
+const db = wx.cloud.database()
+
 Page({
 	data:{
 		userInfo:{},
@@ -59,18 +62,23 @@ Page({
 		const that = this;
 		wx.getUserInfo({
 			success: function (res) {
-				wx.setStorage({
-					key: "userinfo",
-					data: JSON.stringify(res.userInfo)
+				var userInfo = res.userInfo
+				var nickName = userInfo.nickName
+				var avatarUrl = userInfo.avatarUrl
+				var gender = userInfo.gender //性别 0：未知、1：男、2：女
+				
+				db.collection('Users').add({
+					data:{
+					'_id': nickName
+					},
+        success: function(res){
+          console.log("add successfully", res)
+				}
 				})
-				that.setData({
-					login: true,
-					avatarUrl: res.userInfo.avatarUrl,
-					nickName: res.userInfo.nickName
-				})
-			}
-		})
+		}
+	})
 	},
+
 	phoneLogin() {
 		wx.navigateTo({
 			url: './phoneLogin/phoneLogin',
@@ -105,12 +113,12 @@ Page({
 	},
 	personality() {
         wx.navigateTo({
-          url: './personality/personality',
+          url: '/packageC/pages/personality/personality',
         });
 		},
 	gotointro(){
 		wx.navigateTo({
-			url: '/pages/intros/intros',
+			url: '/packageA/pages/intros/intros',
 		})
 	},
 	//test

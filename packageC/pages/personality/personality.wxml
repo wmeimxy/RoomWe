@@ -1,0 +1,23 @@
+<view class="body">
+<block wx:if="{{true}}">
+
+<view class="title">Have you ever took MBTI Personality Test before? </view>
+
+
+<view class="section1">
+  <view class="section_title">If yes, plese select your personality type</view>
+    <picker style="margin : 5mm" mode="selector" range="{{personalities}}" value="{{index}}" bindchange="bindPickerChange">
+    <view class="picker">{{personalities[index]}}</view>
+    </picker>
+  <button class="btn" bindtap="savembti" style="font-weight: 400;" hover-class="hover">Submit</button>
+</view>
+
+<view class="section2">
+  <view class="section_title">If No, click the button to take the test</view>
+  <view class="button">
+      <button class="btn" bindtap="gotombti" style="font-weight: 400;" hover-class="hover">Take the test now</button>
+  </view>
+</view>
+
+</block>
+</view>
