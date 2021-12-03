@@ -3,22 +3,22 @@ var mbti_id = ["ISTJ", "ISFJ", "INFJ", "INTJ",
   "ESTP", "ESFP", "ENFP", "ENTP",
   "ESTJ", "ESFJ", "ENFJ", "ENTJ"]
 var mbti_img = [
-"/image/16Results/ISTJ.png", 
-"/image/16Results/ISFJ.png",
-"/image/16Results/INFJ.png",
-"/image/16Results/INTJ.jpg",
-"/image/16Results/ISTP.png",
-"/image/16Results/ISFP.png",
-"/image/16Results/INFP.png",
-"/image/16Results/INTP.png",
-"/image/16Results/ESTP.png",
-"/image/16Results/ESFP.png",
-"/image/16Results/ENFP.png",
-"/image/16Results/ENTP.png",
-"/image/16Results/ESTJ.png",
-"/image/16Results/ESFJ.png",
-"/image/16Results/ENFJ.png",
-"/image/16Results/ENTJ.png",]
+"https://lh3.googleusercontent.com/BrocFDXn7-FUgmgAbtqXIyzftEBkWfBldVp6AIwYqrv_fqFjl6iEJFmERAnHSRjidzV6KeZRwGdKKRiGf_OM7Ls9N_Byh5h83wRoxuT6AWpJ_v6Xo8T2Mx11_G0Fq2b5624xQACn=w2400", 
+"https://lh3.googleusercontent.com/B2KS02hmFkjzxRXdTVAfJnlWce30vghymzjtNfSrAyyyiaVof_zzWHat4_QFSpiYuDG56gycEozl9gJCDwWyuL_u0IXjp9FDT6SbiMCxblTNqsDJP8__4iHJASna8oA0cRt3AeHl=w2400", //https://photos.app.goo.gl/JedsFFqHSLpexxtr7
+"https://lh3.googleusercontent.com/ayPbXeafCTROkMtWFmDmxjN_nunGZlQaGemj1WhOOCNR_tVBBKXhINNXnHLNSIgn8KBSzFmRjiUJfLhBYj6hBZ3g5RU6nn8yu99fc8FL5lqxdoVy0wg-G6FJUWYpxp6Mr_nxuWL0=w2400",//https://photos.app.goo.gl/rKacZjJU38RHu5fT8
+"https://lh3.googleusercontent.com/FQ6JCsh-OCkBnsmXAbBzOh6S6_-Z4i-qoPte4XasqPPirtzVl6Jx3JtmAAx_7CU2walNilCH0-VYc_ZzXlBWTzvZqmlUjrj-dmjA3ZDBRswL0dKm_rw6_2KnIVpiQLe8tXErfu92=w2400",
+"https://lh3.googleusercontent.com/Ap-WI-Pd6smsuwXEVplwo1HixXp3aVOME7UZnIgMD_27w_-37olM0s6JudAuKr56DiIazEu3W_rn4ApBSdVOJmYaQ27W-7JvPLa-swPkaTlY6Q7j6oLluhlsgL-u2zuEJIAZ-e3g=w2400",
+"https://lh3.googleusercontent.com/hgtXqZLq6Pdu9RnSS_8t747PkolxUG-N5wz3WpyQPb4rPBX1Urv-PzLgUbN0H1PQbV1yLlVWfpYZ-LWZKGx8gmOzok5fqFlz7W8ZHl9DasP2pXZEIcbwcRjU35YwVqRit3SXdwWI=w2400",
+"https://lh3.googleusercontent.com/GSR0QZVBTyAH83zrkf3jH7dY3LcXCROTVMVH6oxeFvJifZS6ZA8Gr3UnWE9gBJQguvrgOuyhNu62UpURheDF_rUi3QqUsUonfmB-iad48-GKbWHhV_HtgZVqyZLByXFfDJTSBjAb=w2400",
+"https://lh3.googleusercontent.com/Kgo8zoVIGnv0ISWw789CaCyj7UVUNuw60p2b-Y43xLJv7t9SVwL7GFdlDNGHWPU0wTKakBemH_P8xQxIC3Js0qAs06wuFSPQs7f6WCUlZN71YgPoHXe4NGCVNE41XV9ud2H0OLRv=w2400",
+"https://lh3.googleusercontent.com/xnyP9m915Ch8YZu8UjhGydsKVzH_-bVuXT_A7XbXr8RR-D4pjKU7GNhIDQQ6Jt_7qIH0QkJCqWg8OOqZNqwNLBReu9r6jvEbQ4ICN6Yrr_0FsTwgTz8MO1E3u8qbb0YPemUsxXCy=w2400",
+"https://lh3.googleusercontent.com/AbjwsADCJ6xNw2LakshMckZb8-VgN5XpDljXFHJbs_lw1M__1PivsTxTYK0jVIdT8f2g0q2tFn2ct8WK5OzXIevd6geYrSWkIQjEu-RP2_cWO-hwwhZFzhBvnvRVJZQy6Hvh7U6n=w2400",
+"https://lh3.googleusercontent.com/Vp5aOBw_vzdASqKZ-CsMJzmSBK6_irRF3Os7jvlbV9-zkaenQiYQ5U5TSBkyocwYX5EBgbux98DXvDzgQTKT24eVey5cqUGRD4LyM8awaYeLRE8EjTzsOTN6MbEt03KMrT35PMv8=w2400",
+"https://lh3.googleusercontent.com/anLRMh2aWP8rFb4synPSDvTaxaZucMs_aiEFHS-D2v8d8vLAMU-o_wcXwMG3AyYVXGgNkelMhIEfusFz34hKM4diwxCvJZFa3kJ-rDGwoXrKSO9sGhOJ7BgwO_SK02ZCDTF_-iVE=w2400",
+"https://lh3.googleusercontent.com/4reXc2_RpLNCmKFXeggG_AyjxybkLcnf_jxwvNqjM6PTyD0XCZvxM6xFKxknxjmZBT4eITBxa-dAh38ll3SgYfSkIyMNWNJYjBTGkkUUrSApjwh0lNmesSV2gZQnEBvKl2sVECcZ=w2400",
+"https://lh3.googleusercontent.com/YXwetWc_huIBXj1H2wmGdn2lG-zkqrUe0V67ZcsuRPROx_1vMQx1B23KaP-njyD65DfokAd00Q4fIvxrOO3HWXIlbjQ1VpwcelVJt-4t-BFuGaUoL0JYKo5OowjR7EgrAnSHonlm=w2400",
+"https://lh3.googleusercontent.com/A13Q7Hf_svLBDn4M7nUwpHyjHucLMSKrGwoy3F42yNT_pc1HrYVyDWes4LTz1121O_9JsFQ9-TJs3UU-wiMMl61Lyz0QkNVvMxLBjbtS1g0GYy4IL53j4a6x4kL1UBaBUWqgwnWz=w2400",
+"https://lh3.googleusercontent.com/ugbomFwwAqCbDeqgq-RnsUelVuVYZaTkl3fEvAb2_xvAgQwYvg_dnIqtDWmPLRyJ-wuSTGzG598t0AHFezWSkOa414woHkNwwwZ92TbyURe-OwDePEBwitkpKUjvvG0HPUkZwjae=w2400",]
 
 var mbti_name_en = ["Inspector", "Protector", "Counselor", "Mastermind/Scientist",
   "Operator/Instrumentor", "Composer/Artist", "Healer/Tutor", "Architect/Designer",
