@@ -17,12 +17,7 @@ Page({
 			{name: "Micky Xu, 2022", avatar: '/image/profilepics/pic2.jpeg'},
 			{name: "Lina Guo, 2022", avatar: '/image/profilepics/pic3.jpeg'}
 		],
-		profilepiclist:[
-			'/image/profilepics/profile_pic.png',
-			'/image/profilepics/pic1.jpeg',
-			'/image/profilepics/pic2.jpeg',
-			'/image/profilepics/pic3.jpeg'
-		],
+		
 		swiperCurrent: 0,
 	},
 	onReady: function () {

@@ -1,27 +1,26 @@
-.hmly-swiper-container{
-	width:100%;
+.swiperDot{
+	background: #5C4DB1;
 	
 }
 .hmly-swiper{
 	border-radius: 20rpx;
-	margin: 20rpx;
-	margin-left: 40rpx;
-	margin-right: 40rpx;
-
-
+	margin: 40rpx;
+	height:375rpx;
+	
 }
 .swiper-image{
 	border-radius: 20rpx;
 	width: 100%;
 	height: 100%;
+
 }
 .recommands{
-	margin: 20rpx;
-	margin-bottom: -20rpx;
+	margin: 30rpx;
+	margin-bottom: -10rpx;
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 40px;
 	color: #383737;
 }
@@ -33,22 +32,23 @@
 	display:inline-block;
 	border:1px solid rgb(255, 255, 255);
 	display:inline-block;
-	height: 550rpx;
-	width:400rpx;
+	height: 620rpx;
+	width:450rpx;
 	}
 	.personalinfobox{
-	height: 520rpx;
-	width:380rpx;
+	height: 600rpx;
+	width:420rpx;
 	margin: 20rpx auto;
 	border: 1px solid rgb(228, 225, 225);
 	border-radius: 20rpx;
 	box-sizing: border-box;
 	text-align: left;
-	box-shadow: 0 0 5rpx 0 rgb(182, 180, 180);
+	box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+	
 	}
 	.profilePic{
 	width:100%;
-	height: 280rpx;
+	height: 350rpx;
 	margin-top: 0rpx;
 	border-top-left-radius: 20rpx;
 	border-top-right-radius: 20rpx;
@@ -58,15 +58,17 @@
 	margin-left: 30rpx;
 	font-family: Nunito;
 	font-style: normal;
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 27px;
 	color: #383737;
+	font-weight: bold;
 	}
 	.alltags{
 	margin-left: 20rpx;
+	margin-top: 10rpx;
 	}
 	.tag{
-	padding: 10rpx;
+	padding: 8rpx;
 	padding-right: 20rpx;
 	padding-left: 20rpx;
 	margin: 10rpx;

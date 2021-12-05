@@ -5,10 +5,12 @@
 		<!-- 轮播图图片 -->
 		<swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key="index">
 			<!-- 加上widthFix可以使图片自适应 -->
-			<image class="swiper-image" src="{{item}}" mode="aspectFit"></image>
+			<image class="swiper-image" src="{{item}}" mode="scaleToFill"></image>
 		</swiper-item>
 	</swiper>
 </view>
+
+
 	<!-- 轮播图结束 -->
 
 
