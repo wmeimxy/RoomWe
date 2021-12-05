@@ -1,6 +1,4 @@
-<block>
-	<!-- 搜索框 -->
-	<search></search>
+<block class="body">
 	<!-- 功能栏 -->
 	<view class="hmly-title-bar">
 		<view class="hmly-item-title {{index == currentIndex ? 'hmly-active' : ' '}}" data-index="{{index}}"
@@ -8,18 +6,25 @@
 			{{item.text}}
 		</view>
 	</view>
+
 	<swiper class="hmly-swiper-box" style="min-height:{{height}}px" duration="300" current="{{currentIndex}}"
 		bindchange="changeTab">
 		<swiper-item class="hmly-swiper-box-item">
 			<block>
-				<view class="hmly-no-content">
-					<text class="icon-empty text-gray" style="font-size:400rpx"></text>
-					<!-- <image src="/image/noContent.png"></image> -->
-					<view class="hmly-but-box">
-						<text style="font-size:30rpx" class="text-gray">No Saves</text>
-						<button class="hmly-but">Explore Roommates</button>
-					</view>
-				</view>
+						<text class="title">Saved Roommates</text>
+					<!--saved users-->
+						<view class="saved-users" wx:for="{{user_info}}" wx:key=''>
+
+							<view class="single-item">
+							<view class="single-image">
+								<image class="user-profile-image" src="{{item.img}}"></image>
+							</view>
+							</view>
+
+							<view class="user-name">{{item.name}}</view>
+							<view class="tags">{{item.tags}}</view>
+
+						</view>
 			</block>
 		</swiper-item>
     

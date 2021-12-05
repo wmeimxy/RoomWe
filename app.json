@@ -22,7 +22,8 @@
     {
       "root": "packageC",
       "pages":[
-        "pages/personality/personality"
+        "pages/personality/personality",
+        "pages/result2/result2"
       ]
     },
     {
