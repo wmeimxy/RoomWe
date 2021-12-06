@@ -73,5 +73,10 @@ Page({
     that.setData({
       currentIndex:e.detail.current
     })
-  }
+  },
+  gotodetail(){
+		wx.navigateTo({
+			url: '/pages/detail_page/detail',
+		})
+	}
 })

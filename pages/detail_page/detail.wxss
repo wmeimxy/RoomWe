@@ -33,9 +33,9 @@
   margin-left: 40rpx;
 
 }
-.userAvatarUrl{
-  background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132);
-  background-attachment: fixed;
+.photo{
+  height: 480rpx;
+  width: 800rpx;
 }
 .hmly-top-bar{
   display:block;
@@ -55,19 +55,6 @@
   font-weight: bold;
   margin-left: 40rpx;
 }
-
-.hmly-user-img{
-  margin: 30rpx auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 200rpx;
-	height: 200rpx;
-	border-radius: 50%;
-  overflow: hidden;
-  background-color: #5C4DB1;
-}
-
 
 .tags{
   margin-top: 20rpx;
@@ -98,6 +85,27 @@
   text-align: center;
   padding-top:10px;
 }
+
+.invitation{
+  margin: auto;
+  margin-top: 60rpx;
+  font-size: 40rpx;
+  color: #FFBF67;
+  padding: 20rpx;
+  background-color: #5C4DB1;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 20rpx;
+  width: 300rpx;
+}
+.hover{
+  color: #5C4DB1;
+  background: #FFBF67;
+}
+
 
 
 

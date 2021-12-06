@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'Nunito', sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+}
+
 .swiperDot{
 	background: #5C4DB1;
 	
@@ -14,6 +19,11 @@
 	height: 100%;
 
 }
+
+.font{
+	font-family: Nunito;
+}
+
 .recommands{
 	margin: 30rpx;
 	margin-bottom: -10rpx;
@@ -83,7 +93,7 @@
 	text-align: center;
 	background: #DFDEFF;
 	border-radius: 4px;
-	font-size: 10px;
+	font-size: 11px;
 	line-height: 12px;
 	color: #383737;
 	}

@@ -29,5 +29,7 @@
   <view class="search-bottom">
     <view class="cancel" bindtap="doCancel">Cancel</view>
     <view class="confirm" bindtap="gotoRecommend">Confirm</view>
-  </view>
+
 </view>
+</view>
+<view class="whitspace">whitespace</view>

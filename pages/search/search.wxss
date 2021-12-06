@@ -3,12 +3,21 @@
   搜索部分css 
   ========
 */
+@font-face{
+	font-family: 'Nunito', sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+}
+
 .hmly-search {
 	width: 90%;
 	height: auto;
 	display: flex;
 	align-items: center;
 	margin: 0rpx auto;
+}
+
+.font{
+	font-family: Nunito;
 }
 
 .hmly-search-left {
@@ -173,4 +182,8 @@
 	background: #5C4DB1;
 	color: #FFBF67;
 	flex: 1;
+}
+
+.whitespace{
+	margin-top: 50rpx;
 }
