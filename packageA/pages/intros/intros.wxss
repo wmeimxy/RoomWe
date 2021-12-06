@@ -103,7 +103,7 @@
   }
 
   .checkbox{
-    width: 300rpx;
+    width: 280rpx;
     height: 80rpx;
     line-height: 80rpx;
     color: black;
@@ -146,4 +146,12 @@
    }
    .cancel-hover{
       color: #A7A7A7;
+   }
+   .name_input{
+     border: solid 0.5px #A7A7A7;
+     border-radius: 20rpx;
+     padding: 5rpx;
+     padding-left: 10rpx;
+     padding-right: 10rpx;
+     margin-bottom: 50rpx;
    }

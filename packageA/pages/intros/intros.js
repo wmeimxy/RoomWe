@@ -5,7 +5,7 @@ Page({
   data: {
     query:[],
     loading: true,
-    username: '',
+    name: '',
 
     campusid:'',
     campusList:[
@@ -142,6 +142,16 @@ Page({
       yearindex: e.detail.value
     })
   },
+  getInput: function(e){
+    console.log('储存data携带值为', e.detail.value)
+    this.setData({
+      name: e.detail.value
+    })
+    wx.setStorage({
+      key: "name",
+      data: this.data.name
+    })
+  },
   checkbox: function (e) {
     var index = e.currentTarget.dataset.index;//获取当前点击的下标
     var checkboxArr = this.data.checkboxArr;//选项集合
@@ -163,7 +173,7 @@ Page({
   gotohome() {
 		wx.switchTab({
       url: '/pages/index/index',
-    });
+    })
   },
 
   doCancel(){

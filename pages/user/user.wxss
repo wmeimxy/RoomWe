@@ -21,9 +21,7 @@
 }
 
 .usernmae{
-	width: 70%;
-	height: 100%;
-	display: flex;
+	display: block;
 	text-align: center;
 	margin: auto;
 }
@@ -84,7 +82,7 @@
 
 .hmly-choice-item {
 	display: flex;
-	width: 90%;
+	width: 100%;
 	height: 60rpx;
 	padding: 20rpx 30rpx;
 	justify-content: space-between;
@@ -148,4 +146,7 @@
 	background-color: red;
 	border-radius: 50%;
 	margin-right: 40rpx;
+}
+.hover{
+	background-color: #FFBF67;
 }

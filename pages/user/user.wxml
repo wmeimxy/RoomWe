@@ -9,9 +9,10 @@
 			</view>
 
 			<view class="hmly-user-nickname">
-				<view class="usernmae">WeChat Nickname: 
+				<view class="usernmae">
 					<open-data type="userNickName"></open-data>
 				</view>
+				<view class="name">{{name}}</view> <!--名字-->
 			</view>
 			
 		</view>
@@ -19,9 +20,9 @@
 		<view class="hmly-chioce">
 			<!-- 选项item -->
 
-			<view class="hmly-choice-item" bindtap="gototest">
+			<view class="hmly-choice-item" bindtap="gototest" hover-class="hover">
 				<view class="">
-					<text style="margin-left:20rpx">View Complete Profile</text>
+					<view style="margin-left:20rpx">View Complete Profile</view>
 				</view>
 			</view>
 			<view class="hmly-choice-item" bindtap="gotointro">
@@ -30,15 +31,15 @@
 				</view>
 			</view>
 
-			<view class="hmly-choice-item" bindtap="personality">
+			<view class="hmly-choice-item" bindtap="personality" hover-class="hover">
 				<view class="">
-					<text style="margin-left:20rpx">Identify My Personality </text>
+					<view style="margin-left:20rpx" >Identify My Personality </view>
 				</view>
 			</view>
 
-			<view class="hmly-choice-item" bindtap="gotoLogin">
+			<view class="hmly-choice-item" bindtap="gotoLogin" hover-class="hover">
 				<view class="">
-					<text style="margin-left:20rpx">Log Out</text>
+					<view style="margin-left:20rpx">Log Out</view>
 				</view>	
 			</view>
 		</view>

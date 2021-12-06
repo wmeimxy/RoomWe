@@ -39,12 +39,10 @@
 	height: 600rpx;
 	width:420rpx;
 	margin: 20rpx auto;
-	border: 1px solid rgb(228, 225, 225);
 	border-radius: 20rpx;
 	box-sizing: border-box;
 	text-align: left;
-	box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
-	
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
 	}
 	.profilePic{
 	width:100%;

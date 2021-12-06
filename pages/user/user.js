@@ -7,6 +7,7 @@ Page({
 	data:{
 		userInfo:{},
 		openid: "",
+		name: ""
 	},
 	onGotUserInfo: function(e){
     //将this对象保存到that中

@@ -4,7 +4,8 @@
     <text class="subtitle">Please fill out your preference to get started with your search.</text>
    
    <!--Q1-->
-
+   <text class="question">Please enter your name?</text>
+      <input class="name_input" placeholder="Please enter your name" type="string" bindinput="getInput"></input>
    <text class="question">Please select where are you planning to live?</text>
 
    <view class="item1">
