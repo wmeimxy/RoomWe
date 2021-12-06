@@ -106,11 +106,6 @@ Page({
 			url: './userinfo/userinfo',
 		});
 	},
-	gotoPreference() {
-		wx.navigateTo({
-			url: './preference/preference',
-		});
-	},
 	personality() {
         wx.navigateTo({
           url: '/packageC/pages/personality/personality',

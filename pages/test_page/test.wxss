@@ -1,3 +1,79 @@
+@font-face{
+	font-family: 'Nunito', sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
+}
+
+.Header{
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  color: black;
+  font-weight: bold;
+  margin-left: 40rpx;
+}
+.username{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+
+.userNickName{
+  font-weight: bold;
+}
+
+.font{
+  font-family: 'Nunito';
+}
+
+.Header1{
+  margin-top: 25rpx;
+  font-size: 30rpx;
+  color: black;
+  font-weight: bold;
+  margin-left: 40rpx;
+
+}
+.userAvatarUrl{
+  background-image: url(https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132);
+
+}
+.hmly-top-bar{
+  background-color: white;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.margin{
+  margin-bottom: 50rpx;
+  color: white;
+}
+
+.Header2{
+  margin-top: 25rpx;
+  font-size: 30rpx;
+  color: black;
+  font-weight: bold;
+  margin-left: 40rpx;
+}
+
+.tags{
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: black;
+  font-weight: blod;
+  margin-bottom: 20rpx;
+  margin-left: 40rpx;
+  display: inline-block;
+  border-radius: 10rpx;
+  background-color: #DFDEFF;
+  padding: 10rpx;
+  box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+}
+.align{
+  float: left;
+  width: 50%;
+  border-top: solid 1px  #A7A7A7;
+}
 .image {
   width: 100px;
   height: 100px;
@@ -9,9 +85,13 @@
   text-align: center;
   padding-top:10px;
 }
+
+
+
 button{
   background: #EA5149;
   width: 60%;
   margin-top: 100px;
   color: #ffffff;
 }
+

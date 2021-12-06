@@ -51,7 +51,7 @@
 }
 
 .hmly-title-text {
-	color: #000;
+	color: #A7A7A7;
 	font-weight: 700;
 }
 
@@ -165,7 +165,7 @@
 
 .search-bottom .cancel {
 	background: #DFDEFF;
-	color: #A7A7A7;
+	color: #282828;
 	flex: 1;
 }
 

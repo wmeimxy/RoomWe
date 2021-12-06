@@ -1,12 +1,65 @@
-<view wx:if="{{!openid}}">
-  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
-</view>
+<view class="font">
+<block>
+	<view class="hmly-body" style="height:{{phoneHeight}}px">
 
-<!-- 如果openid不为空，就说明用户登录了
-读取用户昵称和用户头像显示到页面上 -->
-<view class="uploader-container" wx:if="{{openid}}">
-  <image class="image" src="{{userInfo.avatarUrl}}"></image>
-  <view class='name'>{{userInfo.nickName}}</view>
-</view>
+		<!-- 头像昵称部分 -->
+		<view class="hmly-top-bar">
+			<!-- 头像昵称 -->
+			<view class="hmly-user-img">
+				<open-data type="userAvatarUrl"></open-data>
+			</view>
 
-<button class="primary" bindtap="change">Click here add data</button>
+			<view class="hmly-user-nickname">
+				<view class="username">WeChat Nickname: 
+					<open-data type="userNickName"></open-data>
+				</view>
+			</view>
+			
+    <view class="background">
+    <view class="Header">School: Boston University </view>
+    <view class="Header">School Year: 2022</view>
+    
+    <view class="border">
+    <view class="align">
+    <view class="Header1">My Location</view>
+    <view class="tags">Fenway</view>     
+    <view class="tags">Kenmore</view>
+
+    <view class="Header1">Housing Style/Status</view>
+    <view class="tags">Apartment</view>
+    <view class="tags">Staying</view>
+    </view>
+    <view class="align">
+    <view class="Header1">Housing Duration</view>
+    <view class="tags">Full School Year</view>
+
+    <view class="Header1">My Personality</view>
+    <view class="tags">ENTJ</view>
+    <view class="tags">Commander</view>
+    </view>
+
+    <view class="Header1">My Life Style</view>
+    <view class="tags">Pets Friendly</view>
+    <view class="tags">Non Drinker</view>
+    <view class="tags">Neat</view>
+    </view>
+
+    <view class="Header2">My Life Style Preference</view>
+    <view class="tags">Pets Friendly</view>
+    <view class="tags">Non Drinker</view>
+    <view class="tags">Neat</view>
+    <view class="tags">Flexible Sleep Time</view>
+    <view class="tags">Non Smoker</view>
+    <view class="tags">Overnight Guest</view>
+
+    <view class="Header2">My Housing Preference</view>
+    <view class="tags">Off-Campus</view>
+    <view class="tags">Single Room</view>
+    <view class="tags">Apartment</view>
+
+    <view class="margin">margin</view>
+  </view>
+		</view>
+    </view>
+</block>
+</view>

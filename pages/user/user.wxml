@@ -24,10 +24,9 @@
 					<text style="margin-left:20rpx">View Complete Profile</text>
 				</view>
 			</view>
-
 			<view class="hmly-choice-item" bindtap="gotointro">
 				<view class="">
-					<text style="margin-left:20rpx">Change My Housing Preference</text>
+					<text style="margin-left:20rpx">My Housing Preference</text>
 				</view>
 			</view>
 
