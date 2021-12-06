@@ -1,48 +1,40 @@
+<view class="body">
+<scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" enable-flex="{{true}}">
+						<view class="scroll-x">
+							<view wx:for="{{scrolls}}" wx:key="name">
+								<view id="{{item.tag}}" class="{{item.tag}}">{{item.name}}</view>
+							</view>
+							</view>
+</scroll-view>
 <!-- 轮播图 -->
-<view class="hmly-swiper-container">
-	<swiper class="hmly-swiper" autoplay="true" circular="true" interval="3000" easing-function="easeOutCubic"
-		current="{{swiperCurrent}}" bindchange="swiperChange">
-		<!-- 轮播图图片 -->
-		<swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key="index">
-			<!-- 加上widthFix可以使图片自适应 -->
-			<image class="swiper-image" src="{{item}}" mode="scaleToFill"></image>
-		</swiper-item>
-	</swiper>
-</view>
-
-
-	<!-- 轮播图结束 -->
-
+<scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" enable-flex="{{true}}">
+						<view class="scroll-img">
+							<view wx:for="{{imgList}}" wx:key="image">
+								<image id="{{item.tag}}" class="{{item.tag}}" src="{{item.name}}"></image>
+							</view>
+							</view>
+</scroll-view>
 
 <!-- 左滑 右滑 -->
-<view class="recommands"> Roomates for you >
+<view class="recommands" hover-class="recom-hover" bindtap="gotoRecommend"> Roomates for you >
 </view>
-<scroll-view
-scroll-x="{{true}}" style=" width:100%;"
-refresher-enabled="{{true}}"
-refresher-threshold="{{100}}"
-refresher-default-style="white"
-refresher-background="lightgreen"
-refresher-triggered="{{triggered}}"
-bindrefresherpulling="onPulling"
-bindrefresherrefresh="onRefresh"
-bindrefresherrestore="onRestore"
-bindrefresherabort="onAbort"
->
-<view class="scroll-box" style="white-space:nowrap;">
-<view class="box" wx:for="{{userinfo}}" >
+<scroll-view scroll-x="{{true}}">
+	<view class="scroll-box">
+	<view class="box" wx:for="{{userinfo}}" >
+
 <view class="personalinfobox">
-<image class="profilePic" wx:key="index" src="{{item.avatar}}" mode="aspectFill"/>
-<view >
+	<image class="profilePic" wx:key="index" src="{{item.avatar}}" mode="aspectFill"></image>
+	<view >
 	<view class="name" wx:key="index">{{item.name}}</view>
 </view>
-<view class="alltags">
-<view class="tag">Pet friendly</view>
-<view class="tag">Non drinker</view>
-<view class="tag">Neat</view>
-</view>
+				<view class="alltags">
+				<view class="tag">Pet friendly</view>
+				<view class="tag">Non drinker</view>
+				<view class="tag">Neat</view>
+				</view>
 </view>
 
 </view>
 </view>
 </scroll-view>
+</view>

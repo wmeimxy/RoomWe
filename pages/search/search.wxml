@@ -1,20 +1,8 @@
-<!-- 搜索历史 -->
-<view class="hmly-history" wx:if="{{searchHistory.length}}">
-	<!-- 提示标题 -->
-	<view class="hmly-title">
-		<view class="hmly-title-text">Search History</view>
-		<text class="icon-delete text-gray" bindtap="clearHistory"></text>
-	</view>
-	<!-- 内容 -->
-	<view class="hmly-history-content">
-		<view class="hmly-content-item bg-gray text-black" wx:for="{{searchHistory}}" wx:key="index">{{item}}</view>
-	</view>
-</view>
 <!-- 热门搜索 -->
 <view class="hmly-hot">
 	<!-- 提示标题 -->
 	<view class="hmly-title">
-		<view class="title-text">Tags</view>
+		<view class="title-text">Search For Your Roommates</view>
 	</view>
 	<view class="hmly-hot-content">
 		<view class="hmly-hot-items" wx:for="{{hotData}}" wx:key="index">
@@ -40,6 +28,6 @@
   </view>
   <view class="search-bottom">
     <view class="cancel" bindtap="doCancel">Cancel</view>
-    <view class="confirm" bindtap="doSubmit">Confirm</view>
+    <view class="confirm" bindtap="gotoRecommend">Confirm</view>
   </view>
 </view>

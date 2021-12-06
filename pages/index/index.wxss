@@ -17,22 +17,28 @@
 .recommands{
 	margin: 30rpx;
 	margin-bottom: -10rpx;
+	margin-left: 40rpx;
 	font-family: Nunito;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 900;
 	font-size: 25px;
 	line-height: 40px;
 	color: #383737;
 }
+.recom-hover{
+	color: #5C4DB1;
+}
+
 .scroll-box {
 	width: 100%;
 	white-space: nowrap;
+	margin-left: 20rpx;
+	flex-direction: row; 
 	}
 	.scroll-box .box{
 	display:inline-block;
-	border:1px solid rgb(255, 255, 255);
 	display:inline-block;
-	height: 620rpx;
+	height: 100%;
 	width:450rpx;
 	}
 	.personalinfobox{
@@ -81,3 +87,114 @@
 	line-height: 12px;
 	color: #383737;
 	}
+
+	.scroll-x {
+		display: flex;
+		flex-direction: row; 
+	}
+	.one
+{
+  display: flex;
+  align-items: center;
+	width: 200rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	margin-top: 40rpx;
+	margin-left: 40rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	justify-content: center;
+}
+.two
+{
+	display: flex;
+  align-items: center;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.three
+{
+	display: flex;
+  align-items: center;
+	width: 150rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.four
+{
+  display: flex;
+  align-items: center;
+	width: 150rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.five
+{
+  display: flex;
+  align-items: center;
+	width: 180rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.six{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 190rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 10rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+
+.scroll-img{
+	display: flex;
+	flex-direction: row; 
+}
+.imgone{
+	border-radius: 20rpx;
+	margin: 20rpx;
+	width: 550rpx;
+	height: 288rpx;
+	margin-left: 40rpx;
+}
+
+.imgtwo{
+	border-radius: 20rpx;
+	margin: 20rpx;
+}

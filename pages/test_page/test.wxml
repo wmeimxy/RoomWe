@@ -34,8 +34,7 @@
     <view class="tags">Full School Year</view>
 
     <view class="Header1">My Personality</view>
-    <view class="tags">ENTJ</view>
-    <view class="tags">Commander</view>
+    <view class="tags">{{mbti}}</view>
     </view>
 
     <view class="Header1">My Life Style</view>

@@ -7,9 +7,20 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
+		toView: 'one',
+    scrollLeft: 0,
+    scrolls:[
+      {name: "Pets Friendly",tag:'one' },
+      {name:"Neat",tag:'two'},
+      {name: "Night Bird", tag: 'three'},
+      {name:"Early Bird",tag: 'four'},
+      {name:"Non Smoker", tag:'five'},
+      {name: "Party Person", tag:'six'},
+		],
+		toImage: 'imgone',
 		imgList: [
-			'/image/swiper/roomwe banner 1_画板 1.png',
-			'/image/swiper/roomwe banner 2_画板 1.png'
+			{name: '/image/swiper/roomwe banner 1_画板 1.png',tag: "imgone"},
+			{name: '/image/swiper/roomwe banner 2_画板 1.png',tag: "imgone"}
 		],
 		userinfo:[
 			{name: "Ziran Liu, 2022", avatar: '/image/profilepics/profile_pic.png'},
@@ -46,10 +57,10 @@ Page({
 			})
 		})
 	},
-	//轮播图改变事件
-	swiperChange: function (e) {
-		this.setData({
-			swiperCurrent: e.detail.current
+	gotoRecommend(){
+		wx.navigateTo({
+			url: '../recommend/recommend',
 		})
-	},
+	}
+
 })

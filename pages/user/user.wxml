@@ -25,7 +25,7 @@
 					<view style="margin-left:20rpx">View Complete Profile</view>
 				</view>
 			</view>
-			<view class="hmly-choice-item" bindtap="gotointro">
+			<view class="hmly-choice-item" bindtap="gotointro" hover-class="hover">
 				<view class="">
 					<text style="margin-left:20rpx">My Housing Preference</text>
 				</view>

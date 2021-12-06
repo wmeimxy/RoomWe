@@ -5,13 +5,18 @@ Page({
     searchList: [
       {
         type: 'radio',
-        screenKey: 'Status',
+        screenKey: 'Campus',
         screenValue: ['Off-Campus', 'On-Campus']
       },
       {
         type: 'radio',
         screenKey: 'Gender Preference',
         screenValue: ['Female', 'Male', 'Either']
+      },
+      {
+        type: 'checkbox',
+        screenKey: 'Location',
+        screenValue: ['Fenway', 'Boston', 'Allston', 'Brighton','South Boston', 'Malden']
       },
       {
         type: 'checkbox',
@@ -196,10 +201,6 @@ Page({
        query: selected,
        isBack: true
     })
-     wx.navigateBack({
-       delta: 1
-    })
-	
 	},
 	/**
 	 * 搜索事件
@@ -225,5 +226,10 @@ Page({
 		this.setData({
 			searchHistory: []
 		})
-	}
+  },
+  gotoRecommend(){
+    wx.navigateTo({
+      url: '../recommend/recommend',
+    })
+  }
 })

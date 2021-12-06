@@ -1,4 +1,4 @@
-/* pages/collection/collection.wxss */
+/* pages/recommend/recommend.wxss */
 @font-face{
 	font-family: 'Nunito', sans-serif;
 	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
