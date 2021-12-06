@@ -22,10 +22,14 @@
 	<view class="scroll-box">
 	<view class="box" wx:for="{{userinfo}}" >
 
-<view class="personalinfobox">
+<view class="personalinfobox" >
 	<image class="profilePic" wx:key="index" src="{{item.avatar}}" mode="aspectFill"></image>
 	<view >
-	<view class="name" wx:key="index">{{item.name}}</view>
+	<view class="name" wx:key="index" >{{item.name}}
+		<image class="save-button" bindtap="toCollect" wx:if="{{isSavedRoommate == false}}" src="/image/3994430_bookmark_label_ribbon_save_web_icon-01.png" mode="aspectFill"></image>
+		<image class="save-button" wx:elif="{{isSavedRoommate == true}}" src="/image/3994430_bookmark_label_ribbon_save_web_icon的副本-01.png" mode="aspectFill"></image>
+	</view>
+	
 </view>
 				<view class="alltags">
 				<view class="tag">Pet friendly</view>

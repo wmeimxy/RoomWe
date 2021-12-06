@@ -7,6 +7,7 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
+		isSavedRoommate: false,
 		toView: 'one',
     scrollLeft: 0,
     scrolls:[
@@ -31,6 +32,13 @@ Page({
 		
 		swiperCurrent: 0,
 	},
+	toCollect: function(){
+		let value = this.data.isSavedRoommate;
+		this.setData({
+			isSavedRoommate: !value
+		})
+	},
+
 	onReady: function () {
 		const arr = ["Ziran Liu, 2022",
 					"Cherry Li, 2022",

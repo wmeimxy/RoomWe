@@ -77,6 +77,11 @@
 	color: #383737;
 	font-weight: bold;
 	}
+	.save-button{
+		width: 30rpx;
+		height: 30rpx;
+		margin-left: 50rpx;
+	}
 	.alltags{
 	margin-left: 20rpx;
 	margin-top: 10rpx;
