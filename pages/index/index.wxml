@@ -22,7 +22,7 @@
 	<view class="scroll-box">
 	<view class="box" wx:for="{{userinfo}}" >
 
-<view class="personalinfobox" bindtap="gotodetail">
+<view class="personalinfobox" bindtap="{{item.event}}">
 	<image class="profilePic" wx:key="index" src="{{item.avatar}}" mode="aspectFill"></image>
 	<view >
 	<view class="name" wx:key="index" >{{item.name}}
