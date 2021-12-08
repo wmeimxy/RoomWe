@@ -29,9 +29,11 @@ Page({
     ],
     invitations:[
       {name: "Sherry Ma, 2022", img: '/image/profilepics/profile_pic.png',
-      tags: ['Non Smoker','Night Bird','Neat']},
+      tags: ['Non Smoker','Night Bird','Neat'],
+      event: "acceptsherry"},
       {name: "Jessica Wu, 2024", img: '/image/profilepics/profile_pic.png',
-      tags: ['Night Bird','Party Person','Neat']},
+      tags: ['Night Bird','Party Person','Neat'],
+      event: "acceptjess"},
     ],
   },
   onLoad() {
@@ -92,6 +94,16 @@ goto3: function(e){
 goto4: function(e){
   wx.navigateTo({
       url: '/pages/detail_page/detail',
+  })
+},
+acceptsherry: function(e){
+  wx.navigateTo({
+      url: '/pages/sherry/detail',
+  })
+},
+acceptjess: function(e){
+  wx.navigateTo({
+      url: '/pages/jessica/detail',
   })
 },
 hover1: function(e){

@@ -1,0 +1,64 @@
+<view class="font">
+<block>
+	<view class="hmly-body" style="height:{{phoneHeight}}px">
+
+		<!-- 头像昵称部分 -->
+		<view class="hmly-top-bar">
+			<!-- 头像昵称 -->
+			<image class="photo" src="/image/背景.jpg"></image>
+
+			<view class="hmly-user-nickname">
+				<view class="username">Name: Sherry Ma
+				</view>
+			</view>
+			
+    <view class="background">
+    <view class="Header">School: Boston University </view>
+    <view class="Header">School Year: 2022</view>
+    
+    <view class="border">
+    <view class="align">
+    <view class="Header1">My Location</view>
+    <view class="tags">West Campus</view>  
+
+    <view class="Header1">Housing Style/Status</view>
+    <view class="tags">Dormitory</view>
+    <view class="tags">Staying</view>
+    </view>
+    <view class="align">
+    <view class="Header1">Housing Duration</view>
+    <view class="tags">Full School Year</view>
+
+    <view class="Header1">My Personality</view>
+    <view class="tags">ENTJ</view>
+    <view class="tags">Commander</view>
+    </view>
+
+    <view class="Header1">My Life Style</view>
+    <view class="tags">Night Bird</view>
+    <view class="tags">Overnight Guest</view>
+    <view class="tags">Neat</view>
+    </view>
+
+    <view class="Header2">My Life Style Preference</view>
+    <view class="tags">Non Smoker</view>
+    <view class="tags">Pets Friendly</view>
+    <view class="tags">Non Drinker</view>
+    <view class="tags">Neat</view>
+    <view class="tags">Flexible Sleep Time</view>
+    <view class="tags">Overnight Guest</view>
+
+    <view class="Header2">My Housing Preference</view>
+    <view class="tags">On-Campus</view>
+    <view class="tags">Double Room</view>
+    <view class="tags">Dormitory</view>
+
+    <view class="border">
+    <button class="invitation" hover-class="hover" bindtap = "previewImage">Accept Invitation</button>
+    <view class="margin">margin</view>
+  </view>
+  </view>
+		</view>
+    </view>
+</block>
+</view>

@@ -22,17 +22,17 @@
 					<!--saved users-->
 						<view wx:for="{{user_info}}" bindtap="{{item.event}}" class="saved-users">
 							<view class="single-item">
-							<view class="left-item">
-								<image class="user-profile-image" src="{{item.img}}"></image>
-							</view>
+								<view class="left-item">
+									<image class="user-profile-image" src="{{item.img}}"></image>
+								</view>
 
-							<view class="right-item">
+								<view class="right-item">
 
 								<view class="first-line">
 										<view class="user-name">{{item.name}}</view>
 										<view class="icon">
 										<image class="icon-img" src="{{item.icon}}" bindtap="{{item.icon_change}}"></image>
-									</view>
+										</view>
 								</view>
 
 								<view class="tags">{{item.tags[0]}}</view>
@@ -41,32 +41,32 @@
 								
 							</view>
 						</view>
-						</view>
+					</view>
 			</block>
 		</swiper-item>
     
 		<swiper-item>
 			<block>
 					<!--invitation users-->
-						<view class="saved-users" wx:for="{{invitations}}" wx:key=''>
+						<view wx:for="{{invitations}}" bindtap="{{item.event}}" class="saved-users"  wx:key=''>
 							<view class="single-item">
-							<view class="left-item">
-								<image class="user-profile-image" src="{{item.img}}"></image>
-							</view>
-
-							<view class="right-item">
-
-								<view class="first-line">
-										<view class="user-name">{{item.name}}</view>
+								<view class="left-item">
+									<image class="user-profile-image" src="{{item.img}}"></image>
 								</view>
 
-								<view class="tags">{{item.tags[0]}}</view>
-								<view class="tags">{{item.tags[1]}}</view>
-								<view class="tags">{{item.tags[2]}}</view>
-								
-							</view>
-					</view>
-				</view>
+								<view class="right-item">
+
+									<view class="first-line">
+											<view class="user-name">{{item.name}}</view>
+									</view>
+
+									<view class="tags">{{item.tags[0]}}</view>
+									<view class="tags">{{item.tags[1]}}</view>
+									<view class="tags">{{item.tags[2]}}</view>
+									
+								</view>
+					        </view>
+				        </view>
 			</block>
 		</swiper-item>
 	</swiper>

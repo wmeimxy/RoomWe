@@ -47,5 +47,7 @@
         "useCompilerPlugins": false,
         "minifyWXML": true
     },
+    "appid": "wx261460186f631fa3",
+    "projectname": "roomwe",
     "condition": {}
 }
