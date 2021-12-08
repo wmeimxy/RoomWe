@@ -2,7 +2,8 @@
 <view class="hmly-hot">
 	<!-- 提示标题 -->
 	<view class="hmly-title">
-		<view class="title-text">Search For Your Roommates</view>
+
+		<view class="title-text">Search Your Roommates</view>
 	</view>
 	<view class="hmly-hot-content">
 		<view class="hmly-hot-items" wx:for="{{hotData}}" wx:key="index">

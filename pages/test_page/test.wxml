@@ -5,6 +5,7 @@
 		<!-- 头像昵称部分 -->
 		<view class="hmly-top-bar">
 			<!-- 头像昵称 -->
+      <!--<image class="background-img" src="/image/头像背景.jpg"></image>-->
       <view class="background-img">
       <view class="blank"></view>
 			<view class="hmly-user-img">

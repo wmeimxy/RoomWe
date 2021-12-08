@@ -32,8 +32,10 @@
 }
 
 .background-img{
-  background-color: #DFDEFF;
-  height: 400rpx;
+  background-image: url("https://lh3.googleusercontent.com/zngNPv-XTK7xNI0axrJhe9DuVEQrGAlKpFesp2KWGjtznzf8xhK1XTn39HpAIKTC-uvGhjiOIZaDXxkecG66YwbCBgrWvYyQDLYfYf8c7XDMVgTZScKX-pQ3PeVtJukYZMQViwlJ=w2400");
+  background-size: 100% 100%;
+  height: 208px;
+  width: 390px;
 }
 
 .Header1{
@@ -44,6 +46,10 @@
   margin-left: 40rpx;
 
 }
+.blank{
+  height: 25%;
+}
+
 .userAvatarUrl{
   border-radius: 50%;
 }

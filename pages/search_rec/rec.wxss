@@ -1,0 +1,258 @@
+/* pages/recommend/recommend.wxss */
+@font-face{
+	font-family: 'Nunito', sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+}
+.body{
+	font-family: 'Nunito'
+}
+.hmly-title-bar {
+	width: 100%;
+	height: 80rpx;
+	border-bottom: 1rpx solid #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28rpx;
+	overflow: hidden;
+}
+
+.hmly-item-title {
+	width: 400rpx;
+	height: 100%;
+	text-align: center;
+	line-height: 80rpx;
+	position: relative;
+	color: #aaa;
+}
+
+.hmly-active:after {
+	content: '';
+	width: 300rpx;
+	height: 8rpx;
+	position: absolute;
+	bottom: 0rpx;
+	left: 50rpx;
+	border-radius: 15rpx;
+	background: #5C4DB1;
+}
+
+.hmly-active {
+	font-size: 32rpx;
+	font-weight: 700;
+	transition: all 0.3s;
+	color: #333;
+}
+
+.hmly-collection-content {
+	width: 90%;
+	margin: 0rpx auto;
+	margin-top: 10rpx;
+}
+
+.hmly-collection-content {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 300rpx;
+	color: #aaaaaa
+}
+
+.swiper {
+	display: block;
+	width: 100%;
+}
+
+.hmly-swiper-box-item {
+	height: 400rpx;
+}
+
+.hmly-no-content {
+	width: 90%;
+	height: auto;
+	margin: 0rpx auto;
+	margin-top: 100rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.hmly-no-content image {
+	width: 400rpx;
+	height: 300rpx;
+	align-self: center;
+}
+
+.hmly-but-box {
+	width: 80%;
+	margin: 0rpx auto;
+	margin-top: 40rpx;
+	text-align: center;
+}
+
+.hmly-but {
+	width: 300rpx;
+	height: 80rpx;
+	font-size: 40rpx;
+	line-height: 80rpx;
+	margin-top: 10rpx;
+}
+
+.saved-users{
+	display: block;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	border-radius: 20rpx;
+	margin: auto 30rpx;
+	margin-top: 40rpx;
+}
+
+.single-item{
+display: flex;
+}
+
+.user-profile-image{
+	height: 150rpx;
+	width: 150rpx;
+	margin: 25rpx;
+	border-radius: 20rpx;
+}
+.left-item{
+	clear: both;
+	float: left;
+	width: 30%;
+	margin-right: 30rpx;
+}
+.right-item{
+	float: left;
+	width: 70%;
+	margin-left: 10rpx;
+	margin-top: 25rpx;
+	margin-bottom: 25rpx;
+}
+.title{
+	display: block;
+	margin: 20rpx;
+	font-weight: 700;
+	font-size: 50rpx;
+}
+.first-line{
+	font-weight: 700;
+	font-size: 40rpx;
+}
+.tags{
+	float: left;
+	border-radius: 15rpx;
+	background-color: #DFDEFF;
+	margin-right: 10rpx;
+	margin-top: 20rpx;
+	padding: 5rpx;
+	text-align: center;
+	font-size: 14px;
+	justify-content: center;
+}
+
+.scroll-x {
+  display: flex;
+  flex-direction: row; 
+}
+.one
+{
+  display: flex;
+  align-items: center;
+	width: 200rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	margin-top: 40rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	justify-content: center;
+}
+.two
+{
+	display: flex;
+  align-items: center;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.three
+{
+	display: flex;
+  align-items: center;
+	width: 150rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.four
+{
+  display: flex;
+  align-items: center;
+	width: 150rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.five
+{
+  display: flex;
+  align-items: center;
+	width: 180rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 15rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	justify-content: center;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.six{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 190rpx;
+	text-align: center;
+	padding: 5rpx;
+	border-radius: 20rpx;
+	margin: 10rpx;
+	box-shadow: 0 5rpx 10rpx 1rpx #A7A7A7;
+	margin-top: 40rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.icon{	
+	float: right;
+	margin-right: 20rpx;
+}
+.icon-img{
+	width: 40rpx;
+	height: 40rpx;
+}
+.user-name{
+	float: left;
+}
+

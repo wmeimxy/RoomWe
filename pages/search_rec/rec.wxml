@@ -1,0 +1,32 @@
+<view class="body">
+  <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" enable-flex="{{true}}">
+						<view class="scroll-x">
+							<view wx:for="{{scrolls}}" wx:key="name">
+								<view id="{{item.tag}}" class="{{item.tag}}">{{item.name}}</view>
+							</view>
+							</view>
+</scroll-view>
+
+			<text class="title">Roommates for you ></text>
+			<!--saved users-->
+			<view class="saved-users" wx:for="{{user_info}}" wx:key='' bindtap="gotodetail">
+							<view class="single-item">
+
+							<view class="left-item">
+								<image class="user-profile-image" src="{{item.img}}"></image>
+							</view>
+
+							<view class="right-item">
+								<view class="first-line">
+										<view class="user-name">{{item.name}}</view>
+										<view class="icon">
+										<image class="icon-img" src="{{icon}}"></image>
+									  </view>
+			          </view>
+                    <view class="tags">{{item.tags[0]}}</view>
+                    <view class="tags">{{item.tags[1]}}</view>
+                    <view class="tags">{{item.tags[2]}}</view>				
+				      </view>
+          </view>
+      </view>
+</view>

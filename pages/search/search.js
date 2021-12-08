@@ -22,22 +22,22 @@ Page({
         type: 'checkbox',
         screenKey: 'Personality Type',
         screenValue: [
-          'Architect',
-          'Logician',
-          'Commander',
-          'Debater',
-          'Advocate',
-          'Mediator',
-          'Protagonist',
-          'Campaigner',
-          'Logistician',
-          'Defender',
-          'Executive',
-          'Consul',
-          'Virtuoso',
-          'Adventurer',
-          'Entrepreneur',
-          'Entertainer'
+          'Architect-INTJ',
+          'Logician-INTP',
+          'Commander-ENTJ',
+          'Debater-ENTP',
+          'Advocate-INFJ',
+          'Mediator-INFP',
+          'Protagonist-ENFJ',
+          'Campaigner-ENFP',
+          'Logistician-ISTJ',
+          'Defender-ISFJ',
+          'Executive-ESTJ',
+          'Consul-ESFJ',
+          'Virtuoso-ISTP',
+          'Adventurer-ISFP',
+          'Entrepreneur-ESTP',
+          'Entertainer-ESFP'
         ]
       }
     ] // 搜索关键词
@@ -229,7 +229,7 @@ Page({
   },
   gotoRecommend(){
     wx.navigateTo({
-      url: '../recommend/recommend',
+      url: '../search_rec/rec',
     })
   }
 })
