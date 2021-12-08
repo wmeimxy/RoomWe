@@ -69,6 +69,12 @@ Page({
 		wx.navigateTo({
 			url: '../recommend/recommend',
 		})
+	},
+
+	gotodetail(){
+		wx.navigateTo({
+			url: '../detail_page/detail'
+		})
 	}
 
 })

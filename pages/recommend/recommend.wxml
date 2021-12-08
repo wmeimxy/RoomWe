@@ -9,7 +9,7 @@
 
 			<text class="title">Roommates for you ></text>
 			<!--saved users-->
-			<view class="saved-users" wx:for="{{user_info}}" wx:key=''>
+			<view class="saved-users" wx:for="{{user_info}}" wx:key='' bindtap="gotodetail">
 							<view class="single-item">
 
 							<view class="left-item">
