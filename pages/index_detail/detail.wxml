@@ -1,0 +1,26 @@
+<view class="title">LGBTQ + 101 Workshop</view>
+<view class="date">Date: Nov 9 at 10am</view>
+<view class="date">5 days away</view>
+<view class="image-view">
+	<image class="image-style " src="/image/indexdetail.jpg" mode="aspectFit"></image>
+</view>
+<view class="description" >Moving into a rental can feel overwhelming because there is a lot you need to know in order to be successful. Join us for a free virtual workshop where you will develop the skills and acquire the knowledge you need to confidently rent a place of your own.
+
+Workshop participants will learn about:
+
+- Leases
+- Security Deposits
+- Living with Roommates
+- Dealing with Landlords
+- How to Avoid Rental Scams
+- How to Look After your Home
+- Your Rights and Responsibilities as a Tenent
+
+Adulting 101 is designed for students in grades 10 - 12, but we invite anyone who is interested in learning more about rentals and roommates to join this workshop, regardless of age.
+
+To register online, visit</view>
+<view class="lowerbar"> 
+	<image class="image-bottom" src="/image/b1.png" mode="aspectFit"></image>
+	<image class="image-bottom " src="/image/b2.png"  mode="aspectFit"></image>
+	<image class="image-register " src="/image/b3.png" mode="aspectFit"></image>
+</view>
