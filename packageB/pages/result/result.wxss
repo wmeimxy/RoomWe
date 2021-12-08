@@ -43,8 +43,6 @@
  
  .btn{
    display: block;
-   justify-content: center;
-   align-items: center;
    text-align: center;
    margin: auto;
    width: 600rpx;
@@ -52,9 +50,9 @@
    border: solid #A7A7A7 1px;
    background-color: white;
    margin-top: 60rpx;
-   margin-bottom: 60rpx;
+   margin-bottom: 100rpx;
    padding: 10rpx;
-   height: 80rpx;
+   height: 50rpx;
    font-size: 17px;
    box-shadow: 0 6rpx 10rpx 2rpx #A7A7A7;
  }

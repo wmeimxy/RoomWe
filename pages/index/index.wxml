@@ -2,7 +2,7 @@
 <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" enable-flex="{{true}}">
 						<view class="scroll-x">
 							<view wx:for="{{scrolls}}" wx:key="name">
-								<view id="{{item.tag}}" class="{{item.tag}}">{{item.name}}</view>
+								<view id="{{item.tag}}" class="{{item.tag}}" bindtap="{{item.event}}" style="background-color: {{item.backcolor}};">{{item.name}}</view>
 							</view>
 							</view>
 </scroll-view>

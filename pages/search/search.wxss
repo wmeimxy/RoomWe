@@ -58,7 +58,10 @@
 	align-items: center;
 	box-sizing: border-box;
 }
-
+.title-text{
+	font-size: 50rpx;
+	font-weight: 700;
+}
 .hmly-title-text {
 	color: #A7A7A7;
 	font-weight: 700;

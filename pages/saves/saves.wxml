@@ -14,13 +14,13 @@
 					<scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" enable-flex="{{true}}">
 						<view class="scroll-x">
 							<view wx:for="{{scrolls}}" wx:key="name">
-								<view id="{{item.tag}}" class="{{item.tag}}">{{item.name}}</view>
+								<view id="{{item.tag}}" class="{{item.tag}}" bindtap="{{item.event}}" style="background-color: {{item.backcolor}};">{{item.name}}</view>
 							</view>
 							</view>
 					</scroll-view>
 				<text class="title">Saved Roommates</text>
 					<!--saved users-->
-						<view class="saved-users" wx:for="{{user_info}}" wx:key='' bindtap="gotodetail">
+						<view wx:for="{{user_info}}" bindtap="{{item.event}}" class="saved-users">
 							<view class="single-item">
 							<view class="left-item">
 								<image class="user-profile-image" src="{{item.img}}"></image>
@@ -31,7 +31,7 @@
 								<view class="first-line">
 										<view class="user-name">{{item.name}}</view>
 										<view class="icon">
-										<image class="icon-img" src="{{icon}}"></image>
+										<image class="icon-img" src="{{item.icon}}" bindtap="{{item.icon_change}}"></image>
 									</view>
 								</view>
 

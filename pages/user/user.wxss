@@ -1,11 +1,17 @@
 /* pages/user/user.wxss */
+@font-face{
+	font-family: 'Nunito', sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
+}
+
 .hmly-body {
 	background-color: #f1f1f1;
+	font-family: 'Nunito';
 }
 
 .hmly-top-bar {
 	width: 100%;
-	height: 300rpx;
+	height: 380rpx;
 	background-color: #fff;
 }
 
@@ -24,6 +30,13 @@
 	display: block;
 	text-align: center;
 	margin: auto;
+}
+
+.name{
+	text-align: center;
+	margin: 10rpx;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .hmly-avatar {

@@ -5,7 +5,9 @@
     "pages/search/search",
     "pages/user/user",
     "pages/saves/saves",
-    "pages/recommend/recommend"
+    "pages/recommend/recommend",
+    "pages/detail_page/detail",
+    "pages/lina/lina"
   ],
   "subpackages": [
     {

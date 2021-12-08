@@ -39,6 +39,9 @@ Page({
 				})
 			}
 		})
+		this.setData({
+			name: wx.getStorageSync('name')
+		})
 	},
 	onShow() {
     const that = this

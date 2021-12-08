@@ -8,11 +8,13 @@ Page({
     name: '',
 
     campusid:'',
+    campus: '',
     campusList:[
         {Item_id: "1", Item_Name: "On-campus", des: "I wish to live at an on-campus housing"},
         {Item_id: "2", Item_Name: "Off-campus", des: "I wish to live at an off-campus housing"}],
     
     roomid:'',
+    room: '',
     roomList:[
       {Item_id: "1", Item_Name:"Single room", des: "I wish to live at a single bedroom"},
       {Item_id: "2", Item_Name:"Shared room", des: "I wish to live at a shared bedroom"},
@@ -90,8 +92,11 @@ Page({
   selectCampus:function(e){
     let campusid = e.target.dataset.id
      this.setData({
-       campusid: campusid
+       campusid: campusid,
+       campus: this.data.campusList[campusid-1]
      })
+     console.log("campusid的值为", this.data.campusid)
+     console.log("campus的值为", this.data.campus)
     },
 
   selectRoom:function(e){
@@ -142,15 +147,12 @@ Page({
       yearindex: e.detail.value
     })
   },
-  getInput: function(e){
+  getinput: function(e){
     console.log('储存data携带值为', e.detail.value)
     this.setData({
       name: e.detail.value
     })
-    wx.setStorage({
-      key: "name",
-      data: this.data.name
-    })
+    console.log("name的值为", this.data.name)
   },
   checkbox: function (e) {
     var index = e.currentTarget.dataset.index;//获取当前点击的下标
@@ -171,6 +173,19 @@ Page({
     },
 
   gotohome() {
+  if(this.data.name != ""){
+    wx.setStorage({
+      key: 'name',
+      data: this.data.name
+    })
+  }
+  if(this.data.name != ""){
+    wx.setStorage({
+      key: 'campus',
+      data: this.data.campus
+    })
+  }
+
 		wx.switchTab({
       url: '/pages/index/index',
     })
