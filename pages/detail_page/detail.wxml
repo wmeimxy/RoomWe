@@ -53,10 +53,15 @@
     <view class="tags">Double Room</view>
     <view class="tags">Dormitory</view>
 
-    <view class="border">
-    <view class="invitation" hover-class="hover">Send Invitation</view>
-    <view class="margin">margin</view>
-  </view>
+<view class="container" class="zn-uploadimg">
+<button bindtap="modalinput" class="invitation" hover-class="hover">Send Invitation</button>
+</view>
+<view class="margin"></view>
+<modal hidden="{{hiddenmodalput}}" height='600rpx' title="Please compose your invitation message" confirm-text="Submit" cancel-text="Cancel" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text'placeholder="Write your message here" auto-focus/>
+</modal>
+
+
   </view>
 		</view>
     </view>

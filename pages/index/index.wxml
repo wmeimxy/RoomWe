@@ -8,8 +8,8 @@
 </scroll-view>
 <!-- 轮播图 -->
 <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" enable-flex="{{true}}">
-						<view class="scroll-img">
-							<view wx:for="{{imgList}}" wx:key="image">
+						<view class="scroll-img" >
+							<view wx:for="{{imgList}}" wx:key="image" bindtap="{{item.event}}">
 								<image id="{{item.tag}}" class="{{item.tag}}" src="{{item.name}}"></image>
 							</view>
 							</view>

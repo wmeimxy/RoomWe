@@ -21,31 +21,36 @@ Page({
     ],
 
     stayid: '',
+    stay: '',
     stayList:[
       {Item_id: "1", Item_Name:"Staying", des: "I have a place to stay and I need a roommate"},
       {Item_id: "2", Item_Name:"Moving", des: "I need a place to stay and a roommate"},
     ],
-
+    locat: '',
     location : ["Please select your location","Allston","Backbay","Brighton","Fenway-Kenmore","Malden", "Chinatown","Downtown","East Boston","Brookline","Jamaica Plain","South Boston","North End","Charlestown", "Other",],
     index: 0,
 
     styleid: '',
+    style:'',
     styleList:[
       {Item_id: "1", Item_Name:"Dorm"},
       {Item_id: "2", Item_Name:"Apartment"},
       {Item_id: "3", Item_Name:"House"},
     ],
 
+    gender: '',
     genderList:[
       "Please select your gender here", "Male", "Female", "Non-binary", "Agender", "Trans*", "Other identities",
     ],
     genderindex: 0,
 
+    time: '',
     timeList:[
       "When do you need to find a roommate","Anytime", "Full School Year", "Spring semester", "Fall semester", "Summer",
     ],
     timeindex: 0,
 
+    year:'',
     yearList:[
       "Please select your school year", "Freshmen", "Sophomore", "Junior", "Senior", "Graduate Student"
     ],
@@ -102,32 +107,38 @@ Page({
   selectRoom:function(e){
     let roomid = e.target.dataset.id
     this.setData({
-      roomid: roomid
+      roomid: roomid,
+      room: this.data.roomList[roomid-1]
     })
   },
   selectStay: function(e){
     let stayid=e.target.dataset.id
     this.setData({
-      stayid: stayid
+      stayid: stayid,
+      stay: this.data.stayList[stayid-1]
     })
   },
   selectGender:function(e){
     let genderid = e.target.dataset.id
     this.setData({
-      genderid: genderid
+      genderid: genderid,
+      gender: this.data.genderList[genderid-1]
     })
   },
   selectStyle:function(e){
     let styleid = e.target.dataset.id
     this.setData({
-      styleid: styleid
+      styleid: styleid,
+      style: this.data.styleList[styleid-1]
     })
   },
   bindPickerChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index: e.detail.value
+      index: e.detail.value,
+      locat: this.data.location[e.detail.value]
     })
+    console.log('location值为', this.data.location[e.detail.value])
   },
   bindPickerChangeGender: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -144,7 +155,8 @@ Page({
   bindPickerChangeYear: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      yearindex: e.detail.value
+      yearindex: e.detail.value,
+      year: this.data.yearList[e.detail.value]
     })
   },
   getinput: function(e){
@@ -183,6 +195,36 @@ Page({
     wx.setStorage({
       key: 'campus',
       data: this.data.campus
+    })
+  }
+  if(this.data.room != ""){
+    wx.setStorage({
+      key: 'room',
+      data: this.data.room
+    })
+  }
+  if(this.data.stay != ""){
+    wx.setStorage({
+      key: 'stay',
+      data: this.data.stay
+    })
+  }
+  if(this.data.locat != ""){
+    wx.setStorage({
+      key: 'location',
+      data: this.data.locat
+    })
+  }
+  if(this.data.stay != ""){
+    wx.setStorage({
+      key: 'style',
+      data: this.data.style
+    })
+  }
+  if(this.data.year != ""){
+    wx.setStorage({
+      key: 'schoolyear',
+      data: this.data.year
     })
   }
 

@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
-const app = getApp()
-const myRequest = require('../../api/index.js');
+var app = getApp()
+const myRequest = require('../../api/index.js')
 Page({
 	/**
 	 * 页面的初始数据
@@ -20,8 +20,8 @@ Page({
     ],
 		toImage: 'imgone',
 		imgList: [
-			{name: '/image/swiper/roomwe banner 1_画板 1.png',tag: "imgone"},
-			{name: '/image/swiper/roomwe banner 2_画板 1.png',tag: "imgone"}
+			{name: '/image/swiper/roomwe banner 1_画板 1.png',tag: "imgone", event:'gotoworkshop'},
+			{name: '/image/swiper/roomwe banner 2_画板 1.png',tag: "imgone", event: 'comingsoon'}
 		],
 		userinfo:[
 			{name: "Ziran Liu, 2022", avatar: '/image/profilepics/profile_pic.png', event:'detail1'},
@@ -158,6 +158,17 @@ Page({
 			wx.navigateTo({
 				url: '/pages/detail_page/detail',
 			})
-		}
+		},
 
+		gotoworkshop: function(){
+			wx.navigateTo({
+				url: '/pages/index_detail/detail',
+			})
+		},
+
+		comingsoon: function(){
+			wx.navigateTo({
+				url: '/pages/comingsoon/comingsoon',
+			})
+		}
 })

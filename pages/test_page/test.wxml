@@ -21,17 +21,16 @@
 			
     <view class="background">
     <view class="Header">School: Boston University </view>
-    <view class="Header">School Year: 2022</view>
+    <view class="Header">School Year: {{year}}</view>
     
     <view class="border">
     <view class="align">
     <view class="Header1">My Location</view>
-    <view class="tags">Fenway</view>     
-    <view class="tags">Kenmore</view>
+    <view class="tags">{{location}}</view>     
 
     <view class="Header1">Housing Style/Status</view>
-    <view class="tags">Apartment</view>
-    <view class="tags">Staying</view>
+    <view class="tags">{{style.Item_Name}}</view>
+    <view class="tags">{{stay.Item_Name}}</view>
     </view>
     <view class="align">
     <view class="Header1">Housing Duration</view>
@@ -57,8 +56,8 @@
 
     <view class="Header2">My Housing Preference</view>
     <view class="tags">{{campus.Item_Name}}</view>
-    <view class="tags">Single Room</view>
-    <view class="tags">Apartment</view>
+    <view class="tags">{{style.Item_Name}}</view>
+    <view class="tags">{{room.Item_Name}}</view>
 
     <view class="margin">margin</view>
   </view>

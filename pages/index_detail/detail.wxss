@@ -8,17 +8,41 @@
 	margin: auto;
 	margin-top: 50rpx;
 	width: 100%;
-	  font-family: Nunito;
+	  
 	  font-style: normal;
 	  font-weight: bold;
 	font-size: 40rpx;
-	color: #494cd4;
+	color: #5C4DB1;
 	text-align: center;
 	
+	
+}
+.registerbotton{
+	
+	position:absolute;
+	right: 150rpx;
+	bottom: 65rpx;
+	height: 40rpx;
+	width: 200rpx;
+	
+	
+	background-color: #5C4DB1;
+	text-align: center;
+	font-size: 30rpx;
+	font-family: 'Nunito', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 20rpx;
+	color: #ffffff;
+	border-radius: 40rpx;
+
 }
 .image-view{
+	
 	width: 100%;
-	margin-top: -60rpx;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
 }
 .lowerbar{
 	position: fixed;
@@ -38,8 +62,8 @@
 	margin-left: 50rpx;
 }
 .image-style {
-	
-	border-radius: 10rpx;
+	border-radius: 30rpx;
+	height:320rpx;
 	margin: auto;
 	
 	display:flex;
@@ -50,9 +74,10 @@
 }
 .date{
 	margin: auto;
-	margin-top: 20rpx;
+	margin-top: 30rpx;
+	margin-bottom: 20rpx;
 	border-radius: 20rpx;
-	width: 80%;
+	width: 75%;
 	height: 100%;
 	font-size: 25rpx;
 	font-family: 'Nunito', sans-serif;
@@ -62,12 +87,25 @@
 .description{
 	margin: auto;
 	border-radius: 20rpx;
-	width: 80%;
+	width: 75%;
 	height: 100%;
 	font-size: 25rpx;
 	font-family: 'Nunito', sans-serif;
 	line-height: 20px;
 	color: #383737;
+	display:block;
+	white-space: pre-line;
+}
+.link{
+	text-decoration: underline;
+	margin: auto;
+	border-radius: 20rpx;
+	width: 75%;
+	height: 100%;
+	font-size: 25rpx;
+	font-family: 'Nunito', sans-serif;
+	line-height: 20px;
+	color: #68addb;
 }
 
 .font{

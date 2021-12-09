@@ -44,7 +44,7 @@
 }
 
 .margin{
-  margin-bottom: 50rpx;
+  height: 30rpx;
   color: white;
 }
 
@@ -89,6 +89,7 @@
 .invitation{
   margin: auto;
   margin-top: 60rpx;
+  margin-bottom: 100rpx;
   font-size: 40rpx;
   color: #FFBF67;
   padding: 20rpx;
@@ -104,15 +105,5 @@
 .hover{
   color: #5C4DB1;
   background: #FFBF67;
-}
-
-
-
-
-button{
-  background: #EA5149;
-  width: 60%;
-  margin-top: 100px;
-  color: #ffffff;
 }
 
